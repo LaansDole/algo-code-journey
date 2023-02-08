@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/annotations-23.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ShuffleArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/main/ZigzagTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution">
+      <change afterPath="$PROJECT_DIR$/src/main/FruitBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/main/FruitBasketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +23,21 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LELC04qUTlKyLUw3OuqyVmKp4j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,6 +75,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main" />
       <recent name="main.Main.java" />
       <recent name="main.Main" />
     </key>
@@ -89,8 +83,8 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShuffleArrayTest.shuffle">
-    <configuration name="ShuffleArrayTest.shuffle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FruitBasketTest.totalFruitTest">
+    <configuration name="FruitBasketTest.to_mapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +93,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.ShuffleArrayTest" />
-      <option name="METHOD_NAME" value="shuffle" />
+      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
+      <option name="METHOD_NAME" value="to_mapTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZigzagTest.convert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FruitBasketTest.totalFruitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -115,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.ZigzagTest" />
-      <option name="METHOD_NAME" value="convert" />
+      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
+      <option name="METHOD_NAME" value="totalFruitTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZigzagTest.convert2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FruitBasketTest.totalFruitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -131,14 +125,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.ZigzagTest" />
-      <option name="METHOD_NAME" value="convert2" />
+      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
+      <option name="METHOD_NAME" value="totalFruitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZigzagTest.testConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FruitBasketTest.totalFruitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +141,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.ZigzagTest" />
-      <option name="METHOD_NAME" value="testConvert" />
+      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
+      <option name="METHOD_NAME" value="totalFruitTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FruitBasketTest.totalFruitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
+      <option name="METHOD_NAME" value="totalFruitTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,10 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShuffleArrayTest.shuffle" />
-        <item itemvalue="JUnit.ZigzagTest.convert2" />
-        <item itemvalue="JUnit.ZigzagTest.convert" />
-        <item itemvalue="JUnit.ZigzagTest.testConvert" />
+        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest" />
+        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest3" />
+        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest4" />
+        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest2" />
+        <item itemvalue="JUnit.FruitBasketTest.to_mapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,10 +183,31 @@
       <option name="presentableId" value="Default" />
       <updated>1675431166049</updated>
     </task>
+    <task id="LOCAL-00001" summary="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution">
+      <created>1675675922561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675675922561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,9 +222,19 @@
           <line>14</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/java/main/FruitBasketTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="collected" />
+        <watch expression="fruits[position]" language="JAVA" />
+        <watch expression="position" />
+      </configuration>
       <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/ShuffleArray.java" line="4">
         <watch expression="result" language="JAVA" />
       </inline-watch>
