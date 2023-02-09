@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution">
-      <change afterPath="$PROJECT_DIR$/src/main/FruitBasket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/main/FruitBasketTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="FruitBasket (Medium) Solution">
+      <change afterPath="$PROJECT_DIR$/src/main/CompanyName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +83,8 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FruitBasketTest.totalFruitTest">
-    <configuration name="FruitBasketTest.to_mapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CompanyNameTest.distinctName2">
+    <configuration name="CompanyNameTest.distinctName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +93,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="to_mapTest" />
+      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
+      <option name="METHOD_NAME" value="distinctName2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompanyNameTest.distinctNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
+      <option name="METHOD_NAME" value="distinctNames" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,22 +127,6 @@
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
       <option name="METHOD_NAME" value="totalFruitTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FruitBasketTest.totalFruitTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="totalFruitTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompanyNameTest.distinctName2" />
+        <item itemvalue="JUnit.CompanyNameTest.distinctNames" />
         <item itemvalue="JUnit.FruitBasketTest.totalFruitTest" />
         <item itemvalue="JUnit.FruitBasketTest.totalFruitTest3" />
         <item itemvalue="JUnit.FruitBasketTest.totalFruitTest4" />
-        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest2" />
-        <item itemvalue="JUnit.FruitBasketTest.to_mapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675675922561</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FruitBasket (Medium) Solution">
+      <created>1675871855751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675871855751</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
+    <MESSAGE value="FruitBasket (Medium) Solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="FruitBasket (Medium) Solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -229,16 +237,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="collected" />
-        <watch expression="fruits[position]" language="JAVA" />
-        <watch expression="position" />
-      </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/ShuffleArray.java" line="4">
-        <watch expression="result" language="JAVA" />
-      </inline-watch>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$SolutionTest_testConvert.ic" NAME="SolutionTest.testConvert Coverage Results" MODIFIED="1675434180149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
