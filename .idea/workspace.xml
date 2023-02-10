@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="FruitBasket (Medium) Solution">
-      <change afterPath="$PROJECT_DIR$/src/main/CompanyName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="CompanyName (Hard) 74/89 test cases passed">
+      <change afterPath="$PROJECT_DIR$/src/main/LandDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/LandDistance.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,7 +85,7 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompanyNameTest.distinctName2">
+  <component name="RunManager" selected="JUnit.LandDistanceTest.maxDistance">
     <configuration name="CompanyNameTest.distinctName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
@@ -148,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitBasketTest.totalFruitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandDistanceTest.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="totalFruitTest4" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
         <item itemvalue="JUnit.CompanyNameTest.distinctName2" />
         <item itemvalue="JUnit.CompanyNameTest.distinctNames" />
         <item itemvalue="JUnit.FruitBasketTest.totalFruitTest" />
         <item itemvalue="JUnit.FruitBasketTest.totalFruitTest3" />
-        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest4" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +239,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="distance" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$SolutionTest_testConvert.ic" NAME="SolutionTest.testConvert Coverage Results" MODIFIED="1675434180149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
