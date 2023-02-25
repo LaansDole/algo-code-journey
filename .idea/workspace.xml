@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="FruitBasket (Medium) Solution">
-      <change afterPath="$PROJECT_DIR$/src/main/CompanyName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="LandDistance (Medium) using Queue FIFO algo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/LandDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LandDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/LandDistance.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -83,8 +84,8 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompanyNameTest.distinctName2">
-    <configuration name="CompanyNameTest.distinctName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LandDistanceTest.maxDistance3">
+    <configuration name="LandDistance2Test.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -93,14 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
-      <option name="METHOD_NAME" value="distinctName2" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistance2Test" />
+      <option name="METHOD_NAME" value="maxDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompanyNameTest.distinctNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandDistanceTest.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -109,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
-      <option name="METHOD_NAME" value="distinctNames" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitBasketTest.totalFruitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandDistanceTest.maxDistance1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -125,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="totalFruitTest" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance1_1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitBasketTest.totalFruitTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandDistanceTest.maxDistance2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -141,14 +142,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="totalFruitTest3" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitBasketTest.totalFruitTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LandDistanceTest.maxDistance3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +158,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FruitBasketTest" />
-      <option name="METHOD_NAME" value="totalFruitTest4" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CompanyNameTest.distinctName2" />
-        <item itemvalue="JUnit.CompanyNameTest.distinctNames" />
-        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest" />
-        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest3" />
-        <item itemvalue="JUnit.FruitBasketTest.totalFruitTest4" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance3" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
+        <item itemvalue="JUnit.LandDistance2Test.maxDistance" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance1_1" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance2" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675871855751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="LandDistance (Medium) using Queue FIFO algo">
+      <created>1676046436165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046436165</updated>
+    </task>
+    <task id="LOCAL-00004" summary="LandDistance (Medium) using Queue FIFO algo">
+      <created>1676794036852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676794036852</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,7 +230,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
     <MESSAGE value="FruitBasket (Medium) Solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="FruitBasket (Medium) Solution" />
+    <MESSAGE value="LandDistance (Medium) using Queue FIFO algo" />
+    <option name="LAST_COMMIT_MESSAGE" value="LandDistance (Medium) using Queue FIFO algo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -237,6 +253,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="distance" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$SolutionTest_testConvert.ic" NAME="SolutionTest.testConvert Coverage Results" MODIFIED="1675434180149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
