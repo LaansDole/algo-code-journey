@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="LandDistance (Medium) using Queue FIFO algo">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/LandDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LandDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" afterDir="false" />
@@ -86,8 +84,8 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LandDistanceTest.maxDistance">
-    <configuration name="CompanyNameTest.distinctName2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LandDistanceTest.maxDistance3">
+    <configuration name="LandDistance2Test.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -96,24 +94,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
-      <option name="METHOD_NAME" value="distinctName2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CompanyNameTest.distinctNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.CompanyNameTest" />
-      <option name="METHOD_NAME" value="distinctNames" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistance2Test" />
+      <option name="METHOD_NAME" value="maxDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,6 +112,22 @@
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
       <option name="METHOD_NAME" value="maxDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandDistanceTest.maxDistance1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
+      <option name="METHOD_NAME" value="maxDistance1_1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance2" />
         <item itemvalue="JUnit.LandDistanceTest.maxDistance3" />
-        <item itemvalue="JUnit.CompanyNameTest.distinctName2" />
-        <item itemvalue="JUnit.CompanyNameTest.distinctNames" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
+        <item itemvalue="JUnit.LandDistance2Test.maxDistance" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance1_1" />
+        <item itemvalue="JUnit.LandDistanceTest.maxDistance2" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676046436165</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LandDistance (Medium) using Queue FIFO algo">
+      <created>1676794036852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676794036852</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
