@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="LandDistance (Medium) using Queue FIFO algo">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Sum of range queries solution">
+      <change afterPath="$PROJECT_DIR$/src/main/SumQuerySolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/textFile/SumQuery.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/LandDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LandDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SumQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SumQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="medium-challenge-land-distance" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +63,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dolelongan/RMIT/eclipse-workspace/leet-code-journey&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -84,8 +87,41 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LandDistanceTest.maxDistance3">
-    <configuration name="LandDistance2Test.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SumQuery">
+    <configuration name="SumQuery (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SumQuery" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.SumQuery" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumQuerySolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.SumQuerySolution" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumQueryTest.prefixSumArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -94,14 +130,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistance2Test" />
-      <option name="METHOD_NAME" value="maxDistance" />
+      <option name="MAIN_CLASS_NAME" value="main.SumQueryTest" />
+      <option name="METHOD_NAME" value="prefixSumArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandDistanceTest.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SumQueryTest.prefixSumArray1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
@@ -110,56 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
-      <option name="METHOD_NAME" value="maxDistance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandDistanceTest.maxDistance1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
-      <option name="METHOD_NAME" value="maxDistance1_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandDistanceTest.maxDistance2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
-      <option name="METHOD_NAME" value="maxDistance2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandDistanceTest.maxDistance3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
-      <option name="METHOD_NAME" value="maxDistance3" />
+      <option name="MAIN_CLASS_NAME" value="main.SumQueryTest" />
+      <option name="METHOD_NAME" value="prefixSumArray1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance3" />
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
-        <item itemvalue="JUnit.LandDistance2Test.maxDistance" />
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance1_1" />
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance2" />
+        <item itemvalue="Application.SumQuery" />
+        <item itemvalue="Application.SumQuerySolution" />
+        <item itemvalue="JUnit.SumQueryTest.prefixSumArray1" />
+        <item itemvalue="JUnit.SumQueryTest.prefixSumArray" />
+        <item itemvalue="Application.SumQuery (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676794036852</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="LandDistance (Medium) using Queue FIFO algo (DONE)">
+      <created>1677297480531</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677297480531</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Sum of range queries solution">
+      <created>1677407391224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677407391224</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +233,9 @@
     <MESSAGE value="LeetCode Zigzag (Medium) and ShuffleArray (Easy) solution" />
     <MESSAGE value="FruitBasket (Medium) Solution" />
     <MESSAGE value="LandDistance (Medium) using Queue FIFO algo" />
-    <option name="LAST_COMMIT_MESSAGE" value="LandDistance (Medium) using Queue FIFO algo" />
+    <MESSAGE value="LandDistance (Medium) using Queue FIFO algo (DONE)" />
+    <MESSAGE value="Sum of range queries solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sum of range queries solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
