@@ -16,12 +16,10 @@ public class EscapeRoom {
     }
     public int minOperations(String[] target, String[] enterRooms) {
         enteredRooms.addAll(List.of(enterRooms));
-        PrintWriter out = new PrintWriter(System.out);
         int minEnterAndExit = 0;
-        if(target == enterRooms) {
-            out.println("You have reached the winning order");
-        } else {
-            int correctRooms = 0;
+        if(target != enterRooms) {
+            int correctRooms;
+            // Loop through the smaller array to avoid throwing null exception
             if(target.length > enterRooms.length) {
                 correctRooms = roomInCorrectOrder(target, enterRooms);
             } else {
