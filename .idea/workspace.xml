@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Sum of range queries solution">
-      <change afterPath="$PROJECT_DIR$/src/main/SumQuerySolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/textFile/SumQuery.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SumQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SumQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,17 +82,11 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Test1_2022C" />
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SumQuery">
-    <configuration name="SumQuery (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SumQuery" />
-      <module name="LeetCode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EscapeRoomTest.minOperations3">
     <configuration name="SumQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.SumQuery" />
       <module name="LeetCode" />
@@ -121,33 +113,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumQueryTest.prefixSumArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Test1_2022C.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.SumQueryTest" />
-      <option name="METHOD_NAME" value="prefixSumArray" />
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
+      <option name="METHOD_NAME" value="minOperations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumQueryTest.prefixSumArray1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EscapeRoomTest.minOperations3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Test1_2022C.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.SumQueryTest" />
-      <option name="METHOD_NAME" value="prefixSumArray1" />
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
+      <option name="METHOD_NAME" value="minOperations3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EscapeRoomTest.minOperations4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Test1_2022C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
+      <option name="METHOD_NAME" value="minOperations4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EscapeRoomTest.minOperations3" />
+        <item itemvalue="JUnit.EscapeRoomTest.minOperations4" />
+        <item itemvalue="JUnit.EscapeRoomTest.minOperations" />
         <item itemvalue="Application.SumQuery" />
         <item itemvalue="Application.SumQuerySolution" />
-        <item itemvalue="JUnit.SumQueryTest.prefixSumArray1" />
-        <item itemvalue="JUnit.SumQueryTest.prefixSumArray" />
-        <item itemvalue="Application.SumQuery (1)" />
       </list>
     </recent_temporary>
   </component>
