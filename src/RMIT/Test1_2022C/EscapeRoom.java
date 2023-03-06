@@ -12,12 +12,15 @@ public class EscapeRoom {
         enteredRooms = new Stack<>();
         targetRooms = new String[]{"A", "B", "C"};
     }
+    //enterRoom complexity = O(1)
     public void enterRoom(String room) {
         enteredRooms.add(room);
     }
+    //exitRoom complexity = O(1)
     public String exitRoom() {
         return enteredRooms.pop();
     }
+    //minOperations complexity = O(n)
     public int minOperations() {
         String[] enterRooms = toStringEnteredRoom();
         int minEnterAndExit = 0;
@@ -53,6 +56,7 @@ public class EscapeRoom {
         }
         return minEnterAndExit;
     }
+    //roomInCorrectOrder complexity = O(n)
     private int roomInCorrectOrder(String[] bigRooms, String[] smallRooms) {
         int countCorrectRooms = 0;
         for(int i = 0; i < smallRooms.length; i++) {
@@ -64,15 +68,17 @@ public class EscapeRoom {
         }
         return countCorrectRooms;
     }
+    //toStringEnteredRoom complexity = O(n)
     private String[] toStringEnteredRoom() {
         Object[] enterRooms;
         enterRooms = enteredRooms.toArray();
         return Arrays.copyOf(enterRooms, enterRooms.length, String[].class);
     }
+    //inspectEnteredRoom complexity = O(n)
     private void inspectEnteredRoom() {
         System.out.print("Room has entered: \n");
         for(String room : enteredRooms) {
-            System.out.println(room+ " ");
+            System.out.print(room+ " ");
         }
     }
     public static void main(String[] args) {
