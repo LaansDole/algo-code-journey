@@ -43,12 +43,12 @@ public class rangQuery {
             return line;
         }
     }
-    public static int log2Ceil (int x) {
-        return (int) Math.ceil((Math.log(x)/Math.log(2)));
+    public static int log2Floor (int x) {
+        return (int) Math.floor((Math.log(x)/Math.log(2)));
     }
     public static int[][] minTree(int[] inputArray) {
         int arrayLen = inputArray.length;
-        int numRow = log2Ceil(arrayLen) + 1;
+        int numRow = log2Floor(arrayLen) + 1;
         int[][] min = new int[numRow][arrayLen];
 
         min[0] = inputArray; // size range = 1
@@ -65,10 +65,10 @@ public class rangQuery {
     }
     public static int minAtLocation (int left, int right, int[][] arr) {
         int range = right - left + 1;
-        if (range==(int) Math.pow(2, log2Ceil(range))) {
-            return arr[log2Ceil(range)][left];
+        if (range==(int) Math.pow(2, log2Floor(range))) {
+            return arr[log2Floor(range)][left];
         }
-        int rangePower = log2Ceil(range) - 1;
+        int rangePower = log2Floor(range);
         return Math.min(
                 arr[rangePower][left],
                 arr[rangePower][right-(int) Math.pow(2, rangePower)+1]);
