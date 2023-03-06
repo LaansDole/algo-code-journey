@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="RMIT 2022-SemC Test 1 Problem 1 Solution">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022A/StudentCollection.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="2022A RMIT StudentCollection.java Problem 1">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week1/rangQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week1/rangQueryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/textFile/RangeQuery.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +18,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="medium-challenge-land-distance" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,6 +83,7 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Week1" />
       <recent name="RMIT.Test1_2022C" />
       <recent name="main" />
     </key>
