@@ -28,6 +28,10 @@ public class SumQuery {
         for(int j = 0; j < numOfQueries; j++) {
             int leftRange = f_scanner.nextInt();
             int rightRange = f_scanner.nextInt();
+            if (leftRange == 0) {
+                out.println(prefix_sum[1]);
+                break;
+            }
             out.println(prefix_sum[rightRange]-prefix_sum[leftRange-1]);
         }
         out.close();

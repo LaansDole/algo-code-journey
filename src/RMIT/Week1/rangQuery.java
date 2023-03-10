@@ -46,7 +46,7 @@ public class rangQuery {
     public static int log2Floor (int x) {
         return (int) Math.floor((Math.log(x)/Math.log(2)));
     }
-    public static int[][] minTree(int[] inputArray) {
+    public static int[][] MinTree(int[] inputArray) {
         int arrayLen = inputArray.length;
         int numRow = log2Floor(arrayLen) + 1;
         int[][] min = new int[numRow][arrayLen];
@@ -63,7 +63,7 @@ public class rangQuery {
         }
         return min;
     }
-    public static int minAtLocation (int left, int right, int[][] arr) {
+    public static int MinAtLocation (int left, int right, int[][] arr) {
         int range = right - left + 1;
         if (range==(int) Math.pow(2, log2Floor(range))) {
             return arr[log2Floor(range)][left];
@@ -85,12 +85,12 @@ public class rangQuery {
         for(int i = 0; i < arrayLen; i++) {
             inputArray[i] = f_scanner.nextInt();
         }
-        int[][] minTree = minTree(inputArray);
+        int[][] minTree = MinTree(inputArray);
 
         for(int j = 0; j < numOfQueries; j++) {
             int left = f_scanner.nextInt();
             int right = f_scanner.nextInt();
-            out.println(minAtLocation(left, right, minTree));
+            out.println(MinAtLocation(left, right, minTree));
         }
         out.close();
     }

@@ -19,6 +19,10 @@ public class SumQuerySolution {
         while(q-- > 0){
             int l = fs.nextInt();
             int r = fs.nextInt();
+            if (l == 0) {
+                pw.println(prefix_sum[1]);
+                break;
+            }
             pw.println(prefix_sum[r] - prefix_sum[l - 1]);
         }
         pw.close();
