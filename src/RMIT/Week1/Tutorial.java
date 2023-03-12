@@ -88,8 +88,11 @@ public class Tutorial {
     }
     public static void main(String[] args) {
         Tutorial.Problem1(new int[]{7, 3, 1, 9, 10});
+
         Tutorial.Problem2(5, new int[]{1, 2, 3, 4, 5});
+
         System.out.println(Tutorial.Problem2_5(new int[]{6, 8, 10, 9, 7}));
+
         ArrayList<Integer> seq1Test = new ArrayList<>();
         ArrayList<Integer> seq2Test = new ArrayList<>();
 
