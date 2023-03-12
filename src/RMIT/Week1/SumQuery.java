@@ -1,4 +1,4 @@
-package main;
+package RMIT.Week1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,9 +30,7 @@ public class SumQuery {
             int rightRange = f_scanner.nextInt();
             if (leftRange == 0) {
                 out.println(prefix_sum[1]);
-                break;
-            }
-            out.println(prefix_sum[rightRange]-prefix_sum[leftRange-1]);
+            } else { out.println(prefix_sum[rightRange]-prefix_sum[leftRange-1]); }
         }
         out.close();
     }

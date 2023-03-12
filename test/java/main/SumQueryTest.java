@@ -1,8 +1,7 @@
 package main;
 
+import RMIT.Week1.SumQuery;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SumQueryTest {
     @Test
