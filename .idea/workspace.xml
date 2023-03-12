@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="RMIT Algo Tutorial 1">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="RMIT Algo Tutorial 1 Solution to all questions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week1/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week1/Tutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SumQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SumQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SumQuerySolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SumQuerySolution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +75,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="RMIT.Week1" />
       <recent name="main" />
       <recent name="main.Main.java" />
       <recent name="main.Main" />
@@ -88,13 +86,13 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SumQuery">
     <configuration name="SumQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.SumQuery" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Week1.SumQuery" />
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Week1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,7 +105,7 @@
       <module name="LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Week1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678424982243</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="RMIT Algo Tutorial 1 Solution to all questions">
+      <created>1678606267849</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678606267849</updated>
+    </task>
+    <task id="LOCAL-00012" summary="RMIT Algo Tutorial 1 Solution to all questions">
+      <created>1678606332559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678606332559</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +288,8 @@
     <MESSAGE value="RMIT 2022-SemC Test 1 Problem 1 Solution" />
     <MESSAGE value="rangeQuery update Math.ceil to Math.floor" />
     <MESSAGE value="RMIT Algo Tutorial 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="RMIT Algo Tutorial 1" />
+    <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="RMIT Algo Tutorial 1 Solution to all questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

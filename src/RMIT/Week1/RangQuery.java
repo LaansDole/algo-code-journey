@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /*Acknowledgement: Dr Tri Algorithm 3
 
 */
-public class rangQuery {
+public class RangQuery {
     // ignore this, using FastScanner template for runtime optimization
     static class FastScanner {
         BufferedReader br;
