@@ -5,7 +5,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class LandDistance {
-    public int maxDistance(int[][] grid) {
+    LandDistance() {}
+    public static int maxDistance(int[][] grid) {
         int width = grid.length;
         Queue<int[]> landQueue = new LinkedList<>();
         for (int i = 0; i < width * width; i++) {

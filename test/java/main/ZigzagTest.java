@@ -1,6 +1,7 @@
 package main;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class ZigzagTest {
     @Test
@@ -9,29 +10,28 @@ class ZigzagTest {
 
     @Test
     void convert() {
-        Zigzag zigzag = new Zigzag();
-        System.out.println(zigzag.convert("PAYPALISHIRING",3));
-    }
-    @Test
-    void convert1() {
-        Zigzag zigzag = new Zigzag();
-        System.out.println(zigzag.convert(
-                "hjouvsuyoypayulyeimuotehzriicfskpggkbbipzzrzucxamludfykgr" +
-                        "uowzgiooobppleqlwphapjnadqhdcnvwdtxjbmyppphauxnspusgdh" +
-                        "iixqmbfjxjcvudjsuyibyebmwsiqyoygyxymzevypzvjegebeocfuf" +
-                        "tsxdixtigsieehkchzdflilrjqfnxztqrsvbspkyhsenbppkqtpddb" +
-                        "uotbbqcwivrfxjujjddntgeiqvdgaijvwcyaubwewpjvygehljxepb" +
-                        "piwuqzdzubdubzvafspqpqwuzifwovyddwyvvburczmgyjgfdxvtnu" +
-                        "nneslsplwuiupfxlzbknhkwppanltcfirjcddsozoyvegurfwcsfmo" +
-                        "xeqmrjowrghwlkobmeahkgccnaehhsveymqpxhlrnunyfdzrhbasje" +
-                        "uygafoubutpnimuwfjqsjxvkqdorxxvrwctdsneogvbpkxlpgdirbf" +
-                        "criqifpgynkrrefx",503));
-    }
-    @Test
-    void convert2() {
-        Zigzag zigzag = new Zigzag();
-        System.out.println(zigzag.convert(
-                "txkrsdyronxiisbacxkdczwdlevfughpftgxzhpnuoxegagixsnbujffpcmkivbpoimnrddnrcuzdakatxcnjjsangmxbomryahpekexmyzrzjsuiwjrfduujgrkuddsfkjjwqjjoiaptulbquvxxprgvksqnwktiwefmpqczsusnfufarfxgygbjatywgthcamqpcsrumjjufpuwwteubifcbeajzhnzvdrxyismtdgbscxqyclzksdnwgzypmxlsqisaceuglvapurnyepkwuavaztqnsbhjlzjoefurcwgznwxtliqfklileyywbihmhtanywebvnakjzewjudthlenlflontbumdimcopxbrhmrlkahqwqdafphrfumgrakzmmpclttshmgsnpilgllncteipqqgschfoxjbqcuzrcrerbrzpcnrxtbpmsveudjlcsmuxitoknueonfdpsxpmaeyubepgociiqehbyxlltrbgxfypepdevdzwiqdyungksqlqnzdjqepnlpfrekwzoxwynbwjqetiuhakidtykkoxavpefngvketzfpivudgqkgasmvtygjxiemmjzuhlyakfsudoyjekrhffcydkjbsnphyrdfcciphajkojvsunbzsezyqiblvquvjxbobjdjjovzyrruettyzswraxexqyszyvnzgsirjeqjxkdbfwzeqyxqxcpnchpafcclxkdgqtpndsqkqsqgqoynsnduwsxbwznvlsbensttmkdceukuiijaxowugtxfukageeksydllpontiansizuinrcwmbdhofnslzkkcvvsmknukdpvcjdrchppiuyyalrlmbxqzsilfyhpbwmdgrwiaozjixhikawwctndoxotvvkwsxbaoyipmiaufjfqmdooybtmzhfwestwpuwfuhwi",
-                926));
+        assertAll(
+                () -> assertEquals("PAHNAPLSIIGYIR", Zigzag.convert("PAYPALISHIRING", 3)),
+                () -> assertEquals("hjouvsuyoypayulyeimuotehzriicfskpggkbbipzzrzucxaml" +
+                                "udfykgruowzgiooobppleqlwphapjnadqhdcnvwdtxjbmyppphauxnspusgdhi" +
+                                "ixqmbfjxjcvudjsuyibyebmwsiqyoygyxymzevypzvjegebeocfuftsxdixtig" +
+                                "sieehkchzdflilrjqfnxztqrsvbspkyhsenbppkqtpddbuotbbqcwivrfxjujjd" +
+                                "dntgeiqvdgaijvwcyaubwewpjvygehljxepbpiwuqzdzubdubzvafspqpqwuzi" +
+                                "fwovyddwyvvburczmgyjgfdxvtnunneslsplwuiupfxlzbknhkwppanltcfirj" +
+                                "cddsozoyvegurfwcsfmoxeqmrjowrghwlkobmeahkgccnaehhsveymqpxhlrnun" +
+                                "yfdzrhbasjeuygafoubutpnimuwfjqsjxvkqdorxxvrwctdsneogvbpkxlpgdir" +
+                                "bfcriqifpgynkrxrfe",
+                        Zigzag.convert(
+                                "hjouvsuyoypayulyeimuotehzriicfskpggkbbipzzrzucxamludfykgr" +
+                                        "uowzgiooobppleqlwphapjnadqhdcnvwdtxjbmyppphauxnspusgdh" +
+                                        "iixqmbfjxjcvudjsuyibyebmwsiqyoygyxymzevypzvjegebeocfuf" +
+                                        "tsxdixtigsieehkchzdflilrjqfnxztqrsvbspkyhsenbppkqtpddb" +
+                                        "uotbbqcwivrfxjujjddntgeiqvdgaijvwcyaubwewpjvygehljxepb" +
+                                        "piwuqzdzubdubzvafspqpqwuzifwovyddwyvvburczmgyjgfdxvtnu" +
+                                        "nneslsplwuiupfxlzbknhkwppanltcfirjcddsozoyvegurfwcsfmo" +
+                                        "xeqmrjowrghwlkobmeahkgccnaehhsveymqpxhlrnunyfdzrhbasje" +
+                                        "uygafoubutpnimuwfjqsjxvkqdorxxvrwctdsneogvbpkxlpgdirbf" +
+                                        "criqifpgynkrrefx", 503))
+        );
     }
 }

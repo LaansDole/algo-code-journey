@@ -7,6 +7,16 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public class SumQuery {
+    SumQuery() {}
+    public static int[] prefixSumArray(int[] intArray, int arrayLen) { //for testing the prefix_array
+        int[] prefix_sum = new int[arrayLen+1];
+        int sum = 0;
+        for(int j = 1; j < arrayLen+1; j++) {
+            sum+=intArray[j-1];
+            prefix_sum[j] = sum;
+        }
+        return prefix_sum;
+    }
     public static void main (String[] args) {
         PrintWriter out = new PrintWriter(System.out);
         FastScanner f_scanner = new FastScanner();
@@ -66,14 +76,5 @@ public class SumQuery {
             while(st.hasMoreTokens()) line += " "+st.nextToken();
             return line;
         }
-    }
-    public int[] prefixSumArray(int[] intArray, int arrayLen) { //for testing the prefix_array
-        int[] prefix_sum = new int[arrayLen+1];
-        int sum = 0;
-        for(int j = 1; j < arrayLen+1; j++) {
-            sum+=intArray[j-1];
-            prefix_sum[j] = sum;
-        }
-        return prefix_sum;
     }
 }

@@ -1,22 +1,23 @@
 package main;
 
 public class FruitBasket {
-    public int totalFruit(int[] fruits) {
-        int basket1;
-        int basket2 = 0;
+    public FruitBasket() {}
+    public static int totalFruit(int[] fruits) {
+        int firstBasket;
+        int secondBasket = 0;
         int position = 1;
         int collected = 1;
         int fruits_count;
         while(position<fruits.length) {
-            basket1 = fruits[position-1];
+            firstBasket = fruits[position-1];
             fruits_count = 1;
             for (int i = position; i < fruits.length; i++) { // Get the basket 2 type
-                if (fruits[i] == basket1) {
+                if (fruits[i] == firstBasket) {
                     position++;
                     fruits_count++;
                     continue;
                 }
-                basket2 = fruits[i];
+                secondBasket = fruits[i];
                 position++;
                 fruits_count++;
                 break;
@@ -27,7 +28,7 @@ public class FruitBasket {
             int streak1 = 0;
             int streak2 = 0;
             for (int j = position; j < fruits.length; j++) { // collecting the fruit from the two basket type
-                if(fruits[j] == basket1) { // if the current fruit has same type with basket 1
+                if(fruits[j] == firstBasket) { // if the current fruit has same type with basket 1
                     position++;
                     fruits_count++;
                     if(position>=fruits.length) { // return the fruit collected if it's already the end of the array
@@ -36,7 +37,7 @@ public class FruitBasket {
                     streak1++; // return the number of basket 1 type streak;
                     streak2 = 0; // set basket 2 streak to 0
                     continue;
-                } else if (fruits[j] == basket2) { // if the current fruit has same type with basket 2
+                } else if (fruits[j] == secondBasket) { // if the current fruit has same type with basket 2
                     position++;
                     fruits_count++;
                     if(position>=fruits.length) {

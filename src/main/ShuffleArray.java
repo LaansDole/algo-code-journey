@@ -1,7 +1,8 @@
 package main;
 
 public class ShuffleArray {
-    public int[] shuffle(int[] nums, int n) {
+    ShuffleArray() {}
+    public static int[] shuffle(int[] nums, int n) {
         int[] result = new int[2*n];
         boolean shuf = true;
         int x = 0;

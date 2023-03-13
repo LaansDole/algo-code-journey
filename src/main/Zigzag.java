@@ -23,18 +23,18 @@ class Zigzag {
         numCols++;
         return toZigZag(zigzag, tempStr, numRows, numCols);
     }
-    public String convert(String s, int numRows) {
+    public static String convert(String s, int numRows) {
         char[][] zigzag = new char[numRows][s.length()]; //array_name[row_index][column_index]
         zigzag = toZigZag(zigzag, s, numRows, 0);
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(int m=0; m<numRows; m++) {
             for(char c : zigzag[m]) {
                 if(c!='\u0000') {
-                    result+=c;
+                    result.append(c);
                 }
             }
         }
 //        result=result.replace("\\u0000", "");
-        return result;
+        return result.toString();
     }
 }

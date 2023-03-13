@@ -12,7 +12,8 @@ package main;
 import java.util.*;
 
 public class CompanyName {
-    public boolean validateNames(HashSet<String> set, String name1, String name2) {
+    public CompanyName() {}
+    public static boolean validateNames(HashSet<String> set, String name1, String name2) {
         // if the two names have the same first character
         if(name1.charAt(0) == name2.charAt(0)) {
             return false;
@@ -26,7 +27,7 @@ public class CompanyName {
         return !(set.contains(idea1) || set.contains(idea2));
     }
 
-    public long distinctNames(String[] ideas) {
+    public static long distinctNames(String[] ideas) {
         int distinctName = 0;
         HashSet<String> ideasSet = new HashSet<>(Arrays.asList(ideas));
 //        List<String> ideasArray = new ArrayList<>(Arrays.asList(ideas));
