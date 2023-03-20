@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="BinarySearch solution">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Cleanup All Tests into Assertions object">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/P2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/P4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week2/Problem4Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/textFile/PlaneTimeStamp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week1/SumQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week1/SumQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CompanyName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CompanyName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/FruitBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FruitBasket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/LandDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/LandDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ShuffleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ShuffleArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Zigzag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Zigzag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/CompanyNameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/FruitBasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/FruitBasketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/LandDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/ShuffleArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/SumQueryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/ZigzagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/ZigzagTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/Users/dolelongan/RMIT/eclipse-workspace/leet-code-journey",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dolelongan/RMIT/eclipse-workspace/leet-code-journey&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/" />
@@ -96,14 +89,15 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Week2" />
       <recent name="RMIT.Week1" />
       <recent name="RMIT.Test1_2022C" />
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EscapeRoomTest.minOperations">
-    <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
+  <component name="RunManager">
+    <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="RMIT.Test1_2022C.*" />
@@ -119,7 +113,7 @@
       </method>
     </configuration>
     <configuration name="EscapeRoomTest.minOperations1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
+      <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="RMIT.Test1_2022C.*" />
@@ -135,7 +129,7 @@
       </method>
     </configuration>
     <configuration name="LandDistanceTest.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
+      <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -150,8 +144,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Problem4Test.problem4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Week2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Week2.Problem4Test" />
+      <option name="METHOD_NAME" value="problem4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZigzagTest.convert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
+      <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -167,7 +177,7 @@
       </method>
     </configuration>
     <configuration name="ZigzagTest.convert1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
+      <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -184,7 +194,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EscapeRoomTest.minOperations" />
+        <item itemvalue="JUnit.Problem4Test.problem4" />
         <item itemvalue="JUnit.EscapeRoomTest.minOperations1" />
         <item itemvalue="JUnit.ZigzagTest.convert" />
         <item itemvalue="JUnit.ZigzagTest.convert1" />
@@ -292,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678611920310</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cleanup All Tests into Assertions object">
+      <created>1678709345675</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678709345675</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +335,8 @@
     <MESSAGE value="RMIT Algo Tutorial 1" />
     <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
     <MESSAGE value="BinarySearch solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch solution" />
+    <MESSAGE value="Cleanup All Tests into Assertions object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup All Tests into Assertions object" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
