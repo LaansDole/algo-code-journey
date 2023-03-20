@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Cleanup All Tests into Assertions object">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/P2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/P4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week2/Problem4Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/textFile/PlaneTimeStamp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/SLLTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,7 +89,7 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.EscapeRoomTest.minOperations">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -309,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678709345675</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)">
+      <created>1679291277840</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679291277842</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +337,8 @@
     <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
     <MESSAGE value="BinarySearch solution" />
     <MESSAGE value="Cleanup All Tests into Assertions object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup All Tests into Assertions object" />
+    <MESSAGE value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
