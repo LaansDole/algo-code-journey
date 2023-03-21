@@ -5,7 +5,7 @@ import java.util.*;
 import static java.lang.Double.POSITIVE_INFINITY;
 
 public class Tutorial {
-    // Time complexity: O(N + O(N)) + O(N) = O(N^2)
+    // Time complexity: O(N)
     public static void Problem2SetCase (int[] arr) {
         Set<Integer> set = new HashSet<>();
         for (int element : arr) { // O(N = arr)
