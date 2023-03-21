@@ -19,7 +19,7 @@ public class Node<T> {
     }
 
 
-    public Node<T> getNextNode() {
+    private Node<T> getNextNode() {
         return nextNode;
     }
 

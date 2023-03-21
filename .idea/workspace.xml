@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Implementing Singly Linked List practice from the lecture">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm">
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/LinkedListUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/SLLTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/TortoiseAndHareAlgo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/SinglyLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -87,13 +87,14 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Week3" />
       <recent name="RMIT.Week2" />
       <recent name="RMIT.Week1" />
       <recent name="RMIT.Test1_2022C" />
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.insertNodeAfterIndexTest">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -126,22 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandDistanceTest.maxDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.LandDistanceTest" />
-      <option name="METHOD_NAME" value="maxDistance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Problem4Test.problem4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -153,6 +138,22 @@
       <option name="PACKAGE_NAME" value="RMIT.Week2" />
       <option name="MAIN_CLASS_NAME" value="RMIT.Week2.Problem4Test" />
       <option name="METHOD_NAME" value="problem4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.insertNodeAfterIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Week3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Week3" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Week3.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="insertNodeAfterIndexTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertNodeAfterIndexTest" />
         <item itemvalue="JUnit.Problem4Test.problem4" />
         <item itemvalue="JUnit.EscapeRoomTest.minOperations1" />
         <item itemvalue="JUnit.ZigzagTest.convert" />
         <item itemvalue="JUnit.ZigzagTest.convert1" />
-        <item itemvalue="JUnit.LandDistanceTest.maxDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679338658256</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm">
+      <created>1679389396453</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679389396453</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,9 +358,19 @@
     <MESSAGE value="Cleanup All Tests into Assertions object" />
     <MESSAGE value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
     <MESSAGE value="Implementing Singly Linked List practice from the lecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Singly Linked List practice from the lecture" />
+    <MESSAGE value="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="distance" />

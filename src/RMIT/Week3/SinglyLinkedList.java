@@ -1,12 +1,8 @@
 package RMIT.Week3;
 
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Set;
 
 public class SinglyLinkedList<T> {
-
-    LinkedList<Integer> linkedList;
     public Node<T> head;
     public Node<T> tail;
     int length;
@@ -23,20 +19,23 @@ public class SinglyLinkedList<T> {
         tail = head;
         length = 1;
     }
-    
-    public void appendNode(Node<T> newNode) {
-        tail.setNextNode(newNode);
-        tail = tail.nextNode;
+
+    // Appends the give node to the end of the list
+    public Node<T> append(T data) {
+        tail.nextNode = new Node<T>(data); // Set the next node of the tail to the new node with given data
+        tail = tail.nextNode; // Update tail to the new node
         length++;
+        return tail;
     }
     
-    public void insertNewHead(T data) {
+    public Node<T> insertNewHead(T data) {
         Node<T> newHeadNode = new Node<>(data);
         
         newHeadNode.nextNode = head;
         head = newHeadNode;
         
         length++;
+        return newHeadNode;
     }
 
     public Node<T> addAfter(Node<T> currentNode , T data) {
@@ -47,16 +46,38 @@ public class SinglyLinkedList<T> {
         return newNode;
     }
 
-    public void addAt(int index , T data) {
-        addAfter(getNode(index) , data);
+    public Node<T> insertNodeAfterIndex(int index, T data) {
+        if (index < 0 || index > length) {
+            throw new IndexOutOfBoundsException("Index " + index + " is out of range (index < 0 || index > size())");
+        }
+
+        if (index == 0) { // If index is 0, insert new node as new head
+            return insertNewHead(data);
+        }
+
+        if (index == length) { // If index is the last node, insert new node as new tail
+            return append(data);
+        }
+
+        Node<T> currentNode = getNodeAtIndex(index-1); // Get the node before the specified index
+        return addAfter(currentNode, data); // Insert the new node after the node at the specified index
     }
 
-    public Node<T> getNode(int searchIndex) { // assume search index >= 0
+    public Node<T> getNodeAtIndex(int searchIndex) { // assume search index >= 0
+        if (searchIndex < 0 || searchIndex > length) {
+            throw new IndexOutOfBoundsException("Index " + searchIndex + " is out of range (index < 0 || index > size())");
+        }
+
         if (searchIndex == 0) {
             return head;
         }
+
+        if (searchIndex == length) {
+            return tail;
+        }
+
         Node<T> currentNode = head;
-        int currentIndex = 1;
+        int currentIndex = 0;
         while(currentIndex != searchIndex) {
             currentNode = currentNode.nextNode;
             currentIndex++;
@@ -64,11 +85,17 @@ public class SinglyLinkedList<T> {
         return currentNode;
     }
 
-    public void removeAt(int index) {
+    public void removeNodeAtIndex(int index) {
+        if (index < 0 || index > length) {
+            throw new IndexOutOfBoundsException("Index " + index + " is out of range (index < 0 || index > size())");
+        }
+
         if (index == 0) {
             head = head.nextNode;
-        } else if (index > 0) {
-            Node<T> previous = getNode(index - 1); // the node in front of the removing node
+        }
+
+        if (index > 0) {
+            Node<T> previous = getNodeAtIndex(index - 1); // the node in front of the removing node
             Node<T> current = previous.nextNode;
             previous.nextNode = current.nextNode;
         }
@@ -100,5 +127,9 @@ public class SinglyLinkedList<T> {
         }
 
         return slow; // The start of the loop
+    }
+
+    public int getLength() {
+        return length;
     }
 }
