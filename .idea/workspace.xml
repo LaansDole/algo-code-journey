@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Solving Codility Algo, 66% score (100% correctness + 25% performance)">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Debug unordered set to ordered set with LinkedHashSet">
+      <change afterPath="$PROJECT_DIR$/src/main/FirstMissingPositiveSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SmallestPositiveNotInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FirstMissingPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/main/SmallestPositiveNotInArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/main/FirstMissingPositiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -340,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679551361390</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Debug unordered set to ordered set with LinkedHashSet">
+      <created>1679553746893</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679553746893</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,7 +378,8 @@
     <MESSAGE value="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm" />
     <MESSAGE value="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()" />
     <MESSAGE value="Solving Codility Algo, 66% score (100% correctness + 25% performance)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving Codility Algo, 66% score (100% correctness + 25% performance)" />
+    <MESSAGE value="Debug unordered set to ordered set with LinkedHashSet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug unordered set to ordered set with LinkedHashSet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
