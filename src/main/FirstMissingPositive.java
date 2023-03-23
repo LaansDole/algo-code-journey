@@ -1,6 +1,7 @@
 package main;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /*
@@ -21,7 +22,7 @@ Write an efficient algorithm for the following assumptions:
 N is an integer within the range [1..100,000];
 each element of array A is an integer within the range [−1,000,000..1,000,000].
  */
-public class SmallestPositiveNotInArray {
+public class FirstMissingPositive {
     public static void mergeSort(int[] arr, int arrayLength) {
         if (arrayLength >= 2) {
             int mid = arrayLength / 2;
@@ -68,7 +69,7 @@ public class SmallestPositiveNotInArray {
 
         int smallest = 1;
         if(A[arrayLength-1] > 0) {
-            Set<Integer> set = new HashSet<>();
+            Set<Integer> set = new LinkedHashSet<>();
             for(int ele : A) {
                 set.add(ele);
             }
