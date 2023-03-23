@@ -14,6 +14,7 @@ class SinglyLinkedListTest {
     }
     @Test
     void appendTest() {
+        
     }
 
     @Test

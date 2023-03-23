@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm">
-      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/LinkedListUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()">
+      <change afterPath="$PROJECT_DIR$/src/main/SmallestPositiveNotInArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/main/SmallestPositiveNotInArrayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedListUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +85,14 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="main" />
       <recent name="RMIT.Week3" />
       <recent name="RMIT.Week2" />
       <recent name="RMIT.Week1" />
       <recent name="RMIT.Test1_2022C" />
-      <recent name="main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.insertNodeAfterIndexTest">
+  <component name="RunManager" selected="JUnit.SmallestPositiveNotInArrayTest.solutionTest">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -159,6 +157,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SmallestPositiveNotInArrayTest.solutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.SmallestPositiveNotInArrayTest" />
+      <option name="METHOD_NAME" value="solutionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ZigzagTest.convert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -175,29 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZigzagTest.convert1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.ZigzagTest" />
-      <option name="METHOD_NAME" value="convert1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmallestPositiveNotInArrayTest.solutionTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.insertNodeAfterIndexTest" />
         <item itemvalue="JUnit.Problem4Test.problem4" />
         <item itemvalue="JUnit.EscapeRoomTest.minOperations1" />
         <item itemvalue="JUnit.ZigzagTest.convert" />
-        <item itemvalue="JUnit.ZigzagTest.convert1" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679389396453</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()">
+      <created>1679405929051</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679405929051</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,18 +364,10 @@
     <MESSAGE value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
     <MESSAGE value="Implementing Singly Linked List practice from the lecture" />
     <MESSAGE value="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Floyd Tortoise and Hare Algorithm for removing cycles and detecting cycles, optimized and original version of the algorithm" />
+    <MESSAGE value="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="distance" />
