@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Debug unordered set to ordered set with LinkedHashSet">
-      <change afterPath="$PROJECT_DIR$/src/main/FirstMissingPositiveSolution.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Solution to the FirstMissingPositive problem">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Tutorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679553746893</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Solution to the FirstMissingPositive problem">
+      <created>1679555441832</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679555441832</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +387,8 @@
     <MESSAGE value="Modify the addAfter and addAt method to insertNodeAfterIndex, rename functions, add test cases for detectCycle() and insertNodeAfterIndex()" />
     <MESSAGE value="Solving Codility Algo, 66% score (100% correctness + 25% performance)" />
     <MESSAGE value="Debug unordered set to ordered set with LinkedHashSet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug unordered set to ordered set with LinkedHashSet" />
+    <MESSAGE value="Solution to the FirstMissingPositive problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution to the FirstMissingPositive problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
