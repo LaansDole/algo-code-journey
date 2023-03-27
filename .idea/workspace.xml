@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Solution to the FirstMissingPositive problem">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Tutorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <recent name="RMIT.Test1_2022C" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FirstMissingPositiveTest.solutionTest">
+  <component name="RunManager">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">

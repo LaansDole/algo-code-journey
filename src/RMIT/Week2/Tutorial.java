@@ -3,6 +3,7 @@ package RMIT.Week2;
 import java.util.*;
 
 import static java.lang.Double.POSITIVE_INFINITY;
+import static java.lang.Double.max;
 
 public class Tutorial {
     // Time complexity: O(N)
@@ -32,7 +33,7 @@ public class Tutorial {
                 }
             }
         }
-        // Time complexity: O(N*log(N) +
+        // Time complexity: O(N*log(N)) + O(N) = O(N*log(N))
         public static void SortThenSearchApproach(int[] arr) {
             Tutorial.mergeSort(arr, arr.length); // O(N*logN)
             System.out.println(arr[0]);
@@ -43,32 +44,70 @@ public class Tutorial {
             }
         }
     }
+    /*
+    public static int Problem3(int N) {
 
-    public static void Problem3(int N) {
-        Scanner sc = new Scanner(System.in);
-
-        ArrayList<double[]> planes = new ArrayList<>();
-
-        for (int i = 0; i < N; i++) {
-            double[] planeTimeStamp = new double[2];
-            planeTimeStamp[0] = sc.nextDouble(); // depart time
-            planeTimeStamp[1] = sc.nextDouble(); // arrival time
-            planes.add(planeTimeStamp);
-        }
-        // TODO: Implement the correct algorithm for all possible cases
-        // https://stackoverflow.com/questions/69205144/java-concurrent-airport-simulation-how-to-allow-planes-to-access-different-gat
-
-        int gate = 1;
-
-        for (int i = 1; i < N-1; i++) {
-            if (planes.get(i)[0] > planes.get(i-1)[1]) {
-                continue;
-            } else {
-                gate++;
+        class Plane {
+            public final double arrival;
+            public final double departure;
+            public Plane(double arrival , double departure) {
+                this.arrival = arrival;
+                this.departure = departure;
             }
         }
-        System.out.println("Numbers of gate required: "+gate);
+
+        Scanner sc = new Scanner(System.in);
+
+        Plane[] planes = new Plane[N];
+
+        for (int i = 0; i < N; i++) {
+            double arrival = sc.nextDouble();
+            double departure = sc.nextDouble();
+            planes[i] = new Plane(arrival, departure);
+        }
+
+        // Approach: there are two types of events: arrival and departure
+        // When we scan the events from soonest to latest,
+        // if we encounter an arrival event => increase the gates required
+        // if we encounter a departure event => decrease the gates required
+        // during this process: need to maintain the maximum gates at all points in time
+
+        int[] arrival = new int[N];
+        int[] departure = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            arrival[i] = (int) planes[i].arrival;
+            departure[i] = (int) planes[i].departure;
+        }
+
+        Tutorial.mergeSort(arrival, N);
+        Tutorial.mergeSort(departure, N);
+
+        int arrivalIndex = 0;
+        int departureIndex = 0;
+        int gates = 0;
+        int maxGates = 0;
+
+        // compare the next arrival event to the next departure event
+        // to see which one occurs first, then proceed to the next event of the same type
+        // repeat this process until there is no more event to compare
+        // Implementation: use two-pointers technique
+
+        while(arrivalIndex < N && departureIndex < N) {
+            if(arrival[arrivalIndex] < departure[departureIndex]) {
+                gates++;
+                arrivalIndex++;
+            } else {
+                gates--;
+                departureIndex++;
+            }
+            maxGates = Math.max(maxGates, gates);
+        }
+
+        return maxGates;
     }
+
+     */
     public static void mergeSort(int[] arr, int arrayLength) {
         if (arrayLength >= 2) {
             int mid = arrayLength / 2;
@@ -160,8 +199,11 @@ public class Tutorial {
         System.out.print("Problem 2: Case 2 - With the Set ADT\n");
         Tutorial.Problem2SetCase(new int[]{6, 8, 10, 11, 6, 10});
         System.out.print("Problem 3\n");
-        Tutorial.Problem3(6);
-        System.out.print("Problem 4: Best approach\n");
-        Tutorial.Problem4(new int[]{2,3,9,6});
+//        System.out.print("Gates required: "+ Tutorial.Problem3(6));
+        System.out.print("\nProblem 4: Best approach\n");
+        int[] result = Tutorial.Problem4(new int[]{2,3,9,6});
+        for(int i : result) {
+            System.out.println(i);
+        }
     }
 }
