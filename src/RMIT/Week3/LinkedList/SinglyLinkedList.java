@@ -1,5 +1,7 @@
 package RMIT.Week3.LinkedList;
 
+import RMIT.Week3.Node;
+
 public class SinglyLinkedList<T> {
     public Node<T> head;
     public Node<T> tail;
@@ -20,8 +22,8 @@ public class SinglyLinkedList<T> {
 
     // Appends the give node to the end of the list
     public Node<T> append(T data) {
-        tail.nextNode = new Node<T>(data); // Set the next node of the tail to the new node with given data
-        tail = tail.nextNode; // Update tail to the new node
+        tail.next = new Node<T>(data); // Set the next node of the tail to the new node with given data
+        tail = tail.next; // Update tail to the new node
         length++;
         return tail;
     }
@@ -29,7 +31,7 @@ public class SinglyLinkedList<T> {
     public Node<T> insertNewHead(T data) {
         Node<T> newHeadNode = new Node<>(data);
         
-        newHeadNode.nextNode = head;
+        newHeadNode.next = head;
         head = newHeadNode;
         
         length++;
@@ -38,8 +40,8 @@ public class SinglyLinkedList<T> {
 
     public Node<T> addAfter(Node<T> currentNode , T data) {
         Node<T> newNode = new Node<>(data);
-        newNode.nextNode = currentNode.nextNode;
-        currentNode.nextNode = newNode;
+        newNode.next = currentNode.next;
+        currentNode.next = newNode;
         length++;
         return newNode;
     }
@@ -77,7 +79,7 @@ public class SinglyLinkedList<T> {
         Node<T> currentNode = head;
         int currentIndex = 0;
         while(currentIndex != searchIndex) {
-            currentNode = currentNode.nextNode;
+            currentNode = currentNode.next;
             currentIndex++;
         }
         return currentNode;
@@ -89,13 +91,13 @@ public class SinglyLinkedList<T> {
         }
 
         if (index == 0) {
-            head = head.nextNode;
+            head = head.next;
         }
 
         if (index > 0) {
             Node<T> previous = getNodeAtIndex(index - 1); // the node in front of the removing node
-            Node<T> current = previous.nextNode;
-            previous.nextNode = current.nextNode;
+            Node<T> current = previous.next;
+            previous.next = current.next;
         }
         length--;
     }
@@ -109,19 +111,19 @@ public class SinglyLinkedList<T> {
 
         // If slow meets fast, there is a loop
         do {
-            if(!(fast.hasNext() && fast.nextNode.hasNext())) {
+            if(!(fast.hasNext() && fast.next.hasNext())) {
                 return null;
             }
-            slow = slow.nextNode;
-            fast = fast.nextNode.nextNode;
+            slow = slow.next;
+            fast = fast.next.next;
         } while(slow != fast);
 
         // Reset the slow pointer to the start of the list
         slow = head;
         // Move both pointers one node at a time until they meet again
         while(slow != fast) {
-            slow = slow.nextNode;
-            fast = fast.nextNode;
+            slow = slow.next;
+            fast = fast.next;
         }
 
         return slow; // The start of the loop

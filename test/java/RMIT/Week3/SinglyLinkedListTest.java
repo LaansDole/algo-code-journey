@@ -88,15 +88,15 @@ class SinglyLinkedListTest {
         // List with two nodes pointing at each other should return the head node
         Node<Integer> headNode = new Node<>(1);
         Node<Integer> nextNode = new Node<>(2);
-        headNode.setNextNode(nextNode);
-        nextNode.setNextNode(headNode);
+        headNode.setNext(nextNode);
+        nextNode.setNext(headNode);
         linkedList.head = headNode;
         linkedList.length = 2;
         assertEquals(headNode, linkedList.detectCycle());
 
         // List with two nodes not pointing at each other should return null
         linkedList.head = new Node<>(1);
-        linkedList.head.setNextNode(new Node<>(2));
+        linkedList.head.setNext(new Node<>(2));
         linkedList.length = 2;
         assertNull(linkedList.detectCycle());
 
@@ -104,17 +104,17 @@ class SinglyLinkedListTest {
         headNode = new Node<>(1);
         nextNode = new Node<>(2);
         Node<Integer> cycleStartNode = new Node<>(3);
-        headNode.setNextNode(nextNode);
-        nextNode.setNextNode(cycleStartNode);
-        cycleStartNode.setNextNode(nextNode);
+        headNode.setNext(nextNode);
+        nextNode.setNext(cycleStartNode);
+        cycleStartNode.setNext(nextNode);
         linkedList.head = headNode;
         linkedList.length = 3;
         assertEquals(cycleStartNode, linkedList.detectCycle());
 
         // List with three nodes not forming a cycle should return null
         linkedList.head = new Node<>(1);
-        linkedList.head.setNextNode(new Node<>(2));
-        linkedList.head.nextNode.setNextNode(new Node<>(3));
+        linkedList.head.setNext(new Node<>(2));
+        linkedList.head.next.setNext(new Node<>(3));
         linkedList.length = 3;
         assertNull(linkedList.detectCycle());
     }

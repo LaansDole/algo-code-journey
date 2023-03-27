@@ -1,4 +1,4 @@
-package RMIT.Week3;
+package RMIT.Week3.Queue;
 
 public class ArrayQueue<T> {
     private int size;

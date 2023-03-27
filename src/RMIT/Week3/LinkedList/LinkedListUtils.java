@@ -1,5 +1,7 @@
 package RMIT.Week3.LinkedList;
 
+import RMIT.Week3.Node;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -25,7 +27,7 @@ public class LinkedListUtils<T> {
                 return current;
             }
             visited.add(current);
-            current = current.nextNode;
+            current = current.next;
         }
 
         return null;
@@ -41,11 +43,11 @@ public class LinkedListUtils<T> {
 
         while(currentNode.hasNext()) {
 
-            if(currentNode.nextNode == startOfCycleNode) {
-                currentNode.nextNode = null;
+            if(currentNode.next == startOfCycleNode) {
+                currentNode.next = null;
                 return;
             }
-            currentNode = currentNode.nextNode;
+            currentNode = currentNode.next;
         }
     }
 
@@ -69,9 +71,9 @@ public class LinkedListUtils<T> {
         boolean hasCompletedFullCycle = false;
 
         // Detect all cycle nodes in the linked list
-        while (!hasCompletedFullCycle && fast != null && fast.nextNode != null) {
-            slow = slow.nextNode;
-            fast = fast.nextNode.nextNode;
+        while (!hasCompletedFullCycle && fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
 
             // Check if the slow and fast pointers have met
             if (slow == fast) {
@@ -85,19 +87,19 @@ public class LinkedListUtils<T> {
         // Remove all cycle nodes from the linked list
         for (Node<T> cycleNode : cycleNodes) {
             // Starting from the cycle node, follow the next pointers until we find a node that is not in the cycle
-            Node<T> current = cycleNode.nextNode;
-            cycleNode.nextNode = null;
+            Node<T> current = cycleNode.next;
+            cycleNode.next = null;
 
             while (current != null) {
                 if (cycleNodes.contains(current)) {
-                    current = current.nextNode;
+                    current = current.next;
                 } else {
                     break;
                 }
             }
 
             // Set the next pointer of the cycle node to the non-cycle node we just found
-            cycleNode.nextNode = current;
+            cycleNode.next = current;
         }
     }
 }

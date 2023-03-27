@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Solution to the FirstMissingPositive problem">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add solutions to the problem 3 from week 2">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Stack/ArrayStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Queue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/LinkedListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/LinkedListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +83,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="RMIT.Week3" />
       <recent name="RMIT.Week1" />
       <recent name="main" />
       <recent name="main.Main.java" />
@@ -175,7 +182,7 @@
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RMIT.Week3.*" />
+          <option name="PATTERN" value="RMIT.Week3.Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679555441832</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add solutions to the problem 3 from week 2">
+      <created>1679912546531</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679912546532</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -387,7 +401,8 @@
     <MESSAGE value="Solving Codility Algo, 66% score (100% correctness + 25% performance)" />
     <MESSAGE value="Debug unordered set to ordered set with LinkedHashSet" />
     <MESSAGE value="Solution to the FirstMissingPositive problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution to the FirstMissingPositive problem" />
+    <MESSAGE value="Add solutions to the problem 3 from week 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add solutions to the problem 3 from week 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
