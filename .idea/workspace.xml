@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add solutions to the problem 3 from week 2">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Queue/LinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week3/Stack/ArrayStack.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add Queue package, Stack package and LinkedList package">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week4/BinaryTree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week4/BinaryTree/BinaryTreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week4/BinaryTree/BinaryTreeTraversalNote.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Week4/BinaryTree/BinaryTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Queue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/LinkedListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/LinkedListUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/LinkedList/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Week3/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -90,14 +87,46 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Week4.BinaryTree" />
       <recent name="main" />
       <recent name="RMIT.Week3" />
       <recent name="RMIT.Week2" />
       <recent name="RMIT.Week1" />
-      <recent name="RMIT.Test1_2022C" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BinaryTreeTest.DepthFirstTraversalTest">
+    <configuration name="BinaryTreeTest.DepthFirstTraversalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Week4.BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Week4.BinaryTree" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Week4.BinaryTree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="DepthFirstTraversalTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest.preOrderTraversalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Week4.BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Week4.BinaryTree" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Week4.BinaryTree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="preOrderTraversalTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -109,22 +138,6 @@
       <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
       <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
       <option name="METHOD_NAME" value="minOperations" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EscapeRoomTest.minOperations1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Test1_2022C.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
-      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
-      <option name="METHOD_NAME" value="minOperations1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,22 +175,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem4Test.problem4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Week2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RMIT.Week2" />
-      <option name="MAIN_CLASS_NAME" value="RMIT.Week2.Problem4Test" />
-      <option name="METHOD_NAME" value="problem4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SinglyLinkedListTest.insertNodeAfterIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -196,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTest.DepthFirstTraversalTest" />
+        <item itemvalue="JUnit.BinaryTreeTest.preOrderTraversalTest" />
         <item itemvalue="JUnit.FirstMissingPositiveTest.solutionTest" />
         <item itemvalue="JUnit.FirstMissingPositiveTest.solution2Test" />
         <item itemvalue="JUnit.SinglyLinkedListTest.insertNodeAfterIndexTest" />
-        <item itemvalue="JUnit.Problem4Test.problem4" />
-        <item itemvalue="JUnit.EscapeRoomTest.minOperations1" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679912546532</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add Queue package, Stack package and LinkedList package">
+      <created>1679930148886</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679930148886</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,7 +406,8 @@
     <MESSAGE value="Debug unordered set to ordered set with LinkedHashSet" />
     <MESSAGE value="Solution to the FirstMissingPositive problem" />
     <MESSAGE value="Add solutions to the problem 3 from week 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add solutions to the problem 3 from week 2" />
+    <MESSAGE value="Add Queue package, Stack package and LinkedList package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Queue package, Stack package and LinkedList package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

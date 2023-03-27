@@ -1,0 +1,47 @@
+       5
+     /   \
+    3     8
+   / \   / \
+  2   4 7   9
+
+Suppose we want to perform pre-order traversal on this tree. Here's how the traversal would proceed:
+
+1. Visit the root node (5) and print its value: 5
+2. Traverse the left subtree in pre-order:
+    1. Visit the root node (3) and print its value: 3
+    2. Traverse the left subtree in pre-order:
+        1. Visit the root node (2) and print its value: 2
+        2. The node has no children, so return to its parent.
+    3. Traverse the right subtree in pre-order:
+        1. Visit the root node (4) and print its value: 4
+        2. The node has no children, so return to its parent.
+3. Traverse the right subtree in pre-order:
+    1. Visit the root node (8) and print its value: 8
+    2. Traverse the left subtree in pre-order:
+        1. Visit the root node (7) and print its value: 7
+        2. The node has no children, so return to its parent.
+    3. Traverse the right subtree in pre-order:
+        1. Visit the root node (9) and print its value: 9
+        2. The node has no children, so return to its parent.
+
+So the pre-order traversal of the tree would result in the following output: 5 3 2 4 8 7 9
+
+Now, let's perform in-order traversal on the same tree. Here's how the traversal would proceed:
+
+1. Traverse the left subtree in in-order:
+    1. Visit the root node (2) and print its value: 2
+    2. The node has no children, so return to its parent.
+2. Visit the root node (3) and print its value: 3
+3. Traverse the right subtree in in-order:
+    1. Visit the root node (4) and print its value: 4
+    2. The node has no children, so return to its parent.
+4. Visit the root node (5) and print its value: 5
+5. Traverse the left subtree in in-order:
+    1. Visit the root node (7) and print its value: 7
+    2. The node has no children, so return to its parent.
+6. Visit the root node (8) and print its value: 8
+7. Traverse the right subtree in in-order:
+    1. Visit the root node (9) and print its value: 9
+    2. The node has no children, so return to its parent.
+
+So the in-order traversal of the tree would result in the following output: 2 3 4 5 7 8 9
