@@ -1,5 +1,6 @@
 package RMIT.Week3;
 
+import RMIT.Week3.LinkedList.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,33 +32,33 @@ class SinglyLinkedListTest {
 
         // Insert into an empty list
         list.insertNodeAfterIndex(0, 1);
-        assertEquals(1, list.getNodeAtIndex(0).data);
+        assertEquals(1, list.getNodeAtIndex(0).getData());
         assertEquals(1, list.getLength());
 
         // Insert at the beginning of the list
         list.insertNodeAfterIndex(0, 2);
         assertAll(
-                () -> assertEquals(2, list.getNodeAtIndex(0).data),
-                () -> assertEquals(1, list.getNodeAtIndex(1).data),
+                () -> assertEquals(2, list.getNodeAtIndex(0).getData()),
+                () -> assertEquals(1, list.getNodeAtIndex(1).getData()),
                 () -> assertEquals(2, list.getLength())
         );
 
         // Insert in the middle of the list
         list.insertNodeAfterIndex(1, 3);
         assertAll(
-                () -> assertEquals(2, list.getNodeAtIndex(0).data),
-                () -> assertEquals(3, list.getNodeAtIndex(1).data),
-                () -> assertEquals(1, list.getNodeAtIndex(2).data),
+                () -> assertEquals(2, list.getNodeAtIndex(0).getData()),
+                () -> assertEquals(3, list.getNodeAtIndex(1).getData()),
+                () -> assertEquals(1, list.getNodeAtIndex(2).getData()),
                 () -> assertEquals(3, list.getLength())
         );
 
         // Insert at the end of the list
         list.insertNodeAfterIndex(2, 4);
         assertAll(
-                () -> assertEquals(2, list.getNodeAtIndex(0).data),
-                () -> assertEquals(3, list.getNodeAtIndex(1).data),
-                () -> assertEquals(4, list.getNodeAtIndex(2).data),
-                () -> assertEquals(1, list.getNodeAtIndex(3).data),
+                () -> assertEquals(2, list.getNodeAtIndex(0).getData()),
+                () -> assertEquals(3, list.getNodeAtIndex(1).getData()),
+                () -> assertEquals(4, list.getNodeAtIndex(2).getData()),
+                () -> assertEquals(1, list.getNodeAtIndex(3).getData()),
                 () -> assertEquals(4, list.getLength())
         );
 

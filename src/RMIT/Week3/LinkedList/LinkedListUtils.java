@@ -1,4 +1,4 @@
-package RMIT.Week3;
+package RMIT.Week3.LinkedList;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package RMIT.Week3;
+package RMIT.Week3.LinkedList;
 
 /*
 Acknowledgement: Mike Vo
@@ -7,7 +7,7 @@ Source code from: https://github.com/miketvo/rmit2023a-cosc2658/blob/main/src/ma
 
 public class Node<T> {
     protected T data;
-    protected Node<T> nextNode;
+    public Node<T> nextNode;
 
     public Node(T data, Node<T> nextNode) {
         this.data = data;

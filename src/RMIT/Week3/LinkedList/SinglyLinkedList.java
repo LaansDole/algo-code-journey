@@ -1,11 +1,9 @@
-package RMIT.Week3;
-
-import java.util.LinkedList;
+package RMIT.Week3.LinkedList;
 
 public class SinglyLinkedList<T> {
     public Node<T> head;
     public Node<T> tail;
-    int length;
+    public int length;
 
     // Create an empty SLL
     public SinglyLinkedList() {
