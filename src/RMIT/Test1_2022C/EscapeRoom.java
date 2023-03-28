@@ -1,47 +1,55 @@
 package RMIT.Test1_2022C;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
+import RMIT.Week3.Stack.LinkedListStack;
+import RMIT.Week3.Node;
 
-//Problem 1
+//Problem 1: Implementing Last In First Out for rooms that the player enter
 public class EscapeRoom {
-    static Stack<String> enteredRooms;
-    private static String[] targetRooms;
+    static LinkedListStack<String> enteredRooms;
     public EscapeRoom() {
-        enteredRooms = new Stack<>();
-        targetRooms = new String[]{"A", "B", "C"};
+        enteredRooms = new LinkedListStack<>();
     }
+
     //enterRoom complexity = O(1)
-    public static void enterRoom(String room) {
-        enteredRooms.add(room);
+    public void enterRoom(String room) {
+        enteredRooms.push(room);
     }
+
     //exitRoom complexity = O(1)
-    public static String exitRoom() {
-        return enteredRooms.pop();
-    }
-    //minOperations complexity = O(n)
-    public static int minOperations() {
-        String[] enterRooms = toStringEnteredRoom();
-        int minEnterAndExit = 0;
-        if(targetRooms != enterRooms) {
-            int correctRooms;
-            // Loop through the smaller array to avoid throwing null exception
-            if(targetRooms.length > enterRooms.length) {
-                correctRooms = roomInCorrectOrder(targetRooms, enterRooms);
-            } else {
-                correctRooms = roomInCorrectOrder(enterRooms, targetRooms);
-            }
-            int roomsToExit = enterRooms.length - correctRooms;
-            int roomsToEnter = targetRooms.length - correctRooms;
-            minEnterAndExit = roomsToExit + roomsToEnter;
+    public String exitRoom() {
+        if(!enteredRooms.isEmpty()) {
+            String roomExit = enteredRooms.peek().getData();
+            enteredRooms.pop();
+            return roomExit;
         }
-        return minEnterAndExit;
+        return null;
     }
-    //for JUnit Testing the minOperations operation
-    public static int minOperations(String[] enterRooms, String[] target) {
-        enteredRooms.addAll(List.of(enterRooms));
+
+    public int minOperations(String[] target, String[] enterRooms) {
+        if(enterRooms != null) {
+            new EscapeRoom();
+            for(String room : enterRooms) {
+                enteredRooms.push(room);
+            }
+        } else {
+            enterRooms = new String[enteredRooms.size()];
+            int i = 0;
+            Node<String> currentNode = enteredRooms.peek();
+            while(!enteredRooms.isEmpty()) {
+                enterRooms[i] = currentNode.getData();
+                if(currentNode.hasNext()) {
+                    currentNode = currentNode.next;
+                    i++;
+                } else {
+                    break;
+                }
+            }
+        }
+
         int minEnterAndExit = 0;
+        if(target==null) {
+            target = new String[0];
+        }
         if(target != enterRooms) {
             int correctRooms;
             // Loop through the smaller array to avoid throwing null exception
@@ -56,8 +64,9 @@ public class EscapeRoom {
         }
         return minEnterAndExit;
     }
+
     //roomInCorrectOrder complexity = O(n)
-    public static int roomInCorrectOrder(String[] bigRooms, String[] smallRooms) {
+    private int roomInCorrectOrder(String[] bigRooms, String[] smallRooms) {
         int countCorrectRooms = 0;
         for(int i = 0; i < smallRooms.length; i++) {
             if(bigRooms[i].equals(smallRooms[i])) {
@@ -68,37 +77,26 @@ public class EscapeRoom {
         }
         return countCorrectRooms;
     }
-    //toStringEnteredRoom complexity = O(n)
-    public static String[] toStringEnteredRoom() {
-        Object[] enterRooms;
-        enterRooms = enteredRooms.toArray();
-        return Arrays.copyOf(enterRooms, enterRooms.length, String[].class);
-    }
-    //inspectEnteredRoom complexity = O(n)
-    public static void inspectEnteredRoom() {
-        System.out.print("Room has entered: \n");
-        for(String room : enteredRooms) {
-            System.out.print(room+ " ");
-        }
+
+    private int getSize() {
+        return enteredRooms.size();
     }
     public static void main(String[] args) {
-        new EscapeRoom();
+        EscapeRoom escapeRoom = new EscapeRoom();
         int operations;
 
-        enterRoom("A");
-        enterRoom("B");
-        enterRoom("D");
-        inspectEnteredRoom();
-        operations = minOperations();
+        escapeRoom.enterRoom("A");
+        escapeRoom.enterRoom("B");
+        escapeRoom.enterRoom("D");
+
+        System.out.println("Number of rooms: "+escapeRoom.getSize());
+
+        operations = escapeRoom.minOperations(null, null);
         System.out.println("\nThe number of operations needed to escape: "+operations);
 
-        String roomJustExit;
-        roomJustExit = exitRoom();
-        System.out.println("Exit room: "+ roomJustExit);
+        System.out.println("Room just exit: "+escapeRoom.exitRoom());
 
-        inspectEnteredRoom();
-
-        operations = minOperations();
+        operations = escapeRoom.minOperations(null, null);
         System.out.println("\nThe number of operations needed to escape: "+operations);
     }
 }

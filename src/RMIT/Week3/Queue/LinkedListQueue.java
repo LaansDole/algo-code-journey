@@ -1,7 +1,15 @@
 package RMIT.Week3.Queue;
 
-import RMIT.Week3.Node;
 public class LinkedListQueue<T> {
+    static class Node<T> {
+        T data;
+        Node<T> next;
+
+        public Node(T data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
     private int size;
     private Node<T> head;
 
@@ -56,7 +64,7 @@ public class LinkedListQueue<T> {
         while (node.next != null) {
             node = node.next;
         }
-        return node.getData();
+        return node.data;
     }
 
     public static void main(String[] args) {
