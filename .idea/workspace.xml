@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Update BinaryTree package and traversal methods">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Polish EscapeRoom.java solution from the Test Sample">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/Queue/LinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Queue/LinkedListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week3/Stack/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week3/Stack/LinkedListStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -87,14 +86,14 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Test1_2022C.Problem2" />
       <recent name="RMIT.Test1_2022C" />
       <recent name="RMIT.Week4.BinaryTree" />
       <recent name="main" />
       <recent name="RMIT.Week3" />
-      <recent name="RMIT.Week2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EscapeRoomTest.minOperationsTest">
+  <component name="RunManager" selected="JUnit.StudentBSTTest.addStudent">
     <configuration name="BinaryTreeTest.DepthFirstTraversalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -159,33 +158,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstMissingPositiveTest.solution2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentBSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FirstMissingPositiveTest" />
-      <option name="METHOD_NAME" value="solution2Test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstMissingPositiveTest.solutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentBSTTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main" />
-      <option name="MAIN_CLASS_NAME" value="main.FirstMissingPositiveTest" />
-      <option name="METHOD_NAME" value="solutionTest" />
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
+      <option name="METHOD_NAME" value="addStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentBSTTest.addStudent" />
+        <item itemvalue="JUnit.StudentBSTTest" />
         <item itemvalue="JUnit.EscapeRoomTest.minOperationsTest" />
         <item itemvalue="JUnit.BinaryTreeTest.DepthFirstTraversalTest" />
         <item itemvalue="JUnit.BinaryTreeTest.preOrderTraversalTest" />
-        <item itemvalue="JUnit.FirstMissingPositiveTest.solutionTest" />
-        <item itemvalue="JUnit.FirstMissingPositiveTest.solution2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679939404603</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Polish EscapeRoom.java solution from the Test Sample">
+      <created>1680004831723</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680004831724</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,7 +420,8 @@
     <MESSAGE value="Add solutions to the problem 3 from week 2" />
     <MESSAGE value="Add Queue package, Stack package and LinkedList package" />
     <MESSAGE value="Update BinaryTree package and traversal methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update BinaryTree package and traversal methods" />
+    <MESSAGE value="Polish EscapeRoom.java solution from the Test Sample" />
+    <option name="LAST_COMMIT_MESSAGE" value="Polish EscapeRoom.java solution from the Test Sample" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,6 +430,11 @@
           <url>file://$PROJECT_DIR$/test/java/main/FirstMissingPositiveTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
