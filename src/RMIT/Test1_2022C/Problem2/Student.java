@@ -15,7 +15,7 @@ public class Student {
     }
 
     public boolean hasHigherGPA(Student student) {
-       return this.GPA > student.GPA;
+        return this.GPA > student.GPA;
     }
 
     public boolean hasNext(boolean isRight) {
@@ -26,7 +26,7 @@ public class Student {
         }
     }
 
-    public Student setNext(Student student, boolean isRight) {
+    public Student goToNext(Student student, boolean isRight) {
        if(isRight) {
            this.rightNode = student;
            return rightNode;

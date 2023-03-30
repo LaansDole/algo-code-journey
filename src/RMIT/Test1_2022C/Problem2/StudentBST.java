@@ -1,7 +1,5 @@
 package RMIT.Test1_2022C.Problem2;
 
-import RMIT.Week4.BinaryTree.BinaryTreeNode;
-
 public class StudentBST {
     Student studentRoot;
     int N; // Tree size
@@ -33,33 +31,41 @@ public class StudentBST {
         } else {
             int index = 0;
             Student currentStudent = studentRoot;
+            boolean isRight = true;
             while(index < N && currentStudent != student) {
-                if(currentStudent.hasHigherGPA(student)) { // right side
-                    currentStudent = addStudentHelper(currentStudent, student, true);
+                if(student.hasHigherGPA(currentStudent)) { // right side
+                    currentStudent = setNext(currentStudent, student, isRight);
                 } else { // left side
-                    currentStudent = addStudentHelper(currentStudent, student, false);
+                    currentStudent = setNext(currentStudent, student, !isRight);
                 }
                 index++;
             }
         }
     }
 
-    private Student addStudentHelper(Student currentStudent , Student addingStudent , boolean isRight) {
+    private Student setNext(Student currentStudent , Student addingStudent , boolean isRight) {
         if(currentStudent.hasNext(isRight)) {
             if(isRight) {
-                return currentStudent.setNext(currentStudent.rightNode, true);
-            } else {
-                return currentStudent.setNext(currentStudent.leftNode, false);
+                return currentStudent.goToNext(currentStudent.rightNode, true);
             }
+            return currentStudent.goToNext(currentStudent.leftNode, false);
         } else {
             N++;
-            return currentStudent.setNext(addingStudent, isRight);
+            return currentStudent.goToNext(addingStudent, isRight);
         }
     }
 
-//    public Student nextStudentEasy(Student student) {
-//
-//    }
+    public Student nextStudentEasy(Student student) {
+        boolean isRight = true;
+        Student secondLowestStudent = student.rightNode;
+        while(secondLowestStudent != null
+                && secondLowestStudent.hasHigherGPA(student)
+                && secondLowestStudent.hasNext(!isRight)) {
+
+           secondLowestStudent = secondLowestStudent.leftNode;
+        }
+        return secondLowestStudent;
+    }
 //
 //    public Student nextStudentGeneral(Student student) {
 //

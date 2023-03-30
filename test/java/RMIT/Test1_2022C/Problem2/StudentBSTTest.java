@@ -14,8 +14,9 @@ class StudentBSTTest {
     Student s6 = new Student(6, "F", 66.0);
     Student s7 = new Student(7, "G", 50.0);
     Student s8 = new Student(8, "H", 90.0);
-
-
+    Student s9 = new Student(9, "I", 71.0);
+    Student s10 = new Student(10, "J", 69.0);
+    Student s11 = new Student(11, "K", 70.0);
 
     @Test
     void addStudent() {
@@ -27,8 +28,13 @@ class StudentBSTTest {
         studentBST.addStudent(s6);
         studentBST.addStudent(s7);
         studentBST.addStudent(s8);
+        studentBST.addStudent(s9);
+        studentBST.addStudent(s10);
+        studentBST.addStudent(s11);
 
         studentBST.getTreeSize();
         studentBST.printTree(studentBST.studentRoot, "", true);
+
+        assertEquals(71, studentBST.nextStudentEasy(s1).GPA);
     }
 }
