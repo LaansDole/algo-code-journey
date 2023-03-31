@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Refactor code, clean up addStudent() method">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Refactor code, clean up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -426,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680254553174</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Refactor code, clean up">
+      <created>1680257303466</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680257303466</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LandDistance (Medium) using Queue FIFO algo" />
     <MESSAGE value="LandDistance (Medium) using Queue FIFO algo (DONE)" />
     <MESSAGE value="Sum of range queries solution" />
     <MESSAGE value="RMIT 2022-SemC Test 1 Problem 1 Solution" />
@@ -467,7 +471,8 @@
     <MESSAGE value="Add nextStudentGeneral() method, complete the sample test" />
     <MESSAGE value="Add Graph class" />
     <MESSAGE value="Refactor code, clean up addStudent() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor code, clean up addStudent() method" />
+    <MESSAGE value="Refactor code, clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code, clean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

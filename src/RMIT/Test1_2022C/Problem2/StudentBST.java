@@ -105,7 +105,7 @@ public class StudentBST {
             return root;
         }
 
-        if (root.student.GPA > node.student.GPA) {
+        if (root.student.hasHigherGPA(node.student)) {
             return findParent(root.leftNode, node);
         }
 
@@ -163,19 +163,24 @@ public class StudentBST {
      */
     public void removeStudent(Student student) {
         StudentNode<Student> studentNode = getNodePreRecursive(student);
-        boolean right = true; 
+        StudentNode<Student> parentNode = findParent(studentNode);
+        boolean right = true;
+
+        StudentNode<Student> nodeToSet = studentNode.hasNext(right) ? studentNode.rightNode :
+                studentNode.hasNext(!right) ? studentNode.leftNode : null;
         // Case 3
         if(studentNode.hasNext(right) && studentNode.hasNext(!right)) {
             
-        } 
+        }
         // Case 2
-        else if(studentNode.hasNext(right) || studentNode.hasNext(!right)) {
-            
-        } 
-        // Case 1
-        else {
-            StudentNode<Student> parentNode = findParent(studentNode);
-            if(student.hasHigherGPA(parentNode.student)) { // right subtree
+        else if (nodeToSet != null) {
+            if (student.hasHigherGPA(parentNode.student)) {
+                parentNode.rightNode = nodeToSet;
+            } else {
+                parentNode.leftNode = nodeToSet;
+            }
+        } else {
+            if (student.hasHigherGPA(parentNode.student)) {
                 parentNode.rightNode = null;
             } else {
                 parentNode.leftNode = null;
