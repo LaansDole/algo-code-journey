@@ -3,6 +3,7 @@ package RMIT.Test1_2022C.Problem2;
 public class StudentBST {
     StudentNode<Student> studentRoot;
     int N; // Tree size
+    private final static boolean right = true;
     public StudentBST() {
         studentRoot = null;
         N = 0;
@@ -25,8 +26,6 @@ public class StudentBST {
     }
 
     private void insert(StudentNode<Student> studentNode, StudentNode<Student> root) {
-        boolean right = true;
-
         if(studentNode.student.hasHigherGPA(root.student)) { // right subtree
             if(root.hasNext(right)) {
                 insert(studentNode, root.rightNode);
@@ -71,15 +70,13 @@ public class StudentBST {
         root = root.rightNode;
         return getNodePreRecursive(student, root);
     }
-    
+
     private StudentNode<Student> getNodePreRecursive(Student student) {
         return getNodePreRecursive(student, studentRoot);
     }
 
-    // Assume the given student node has not-null left and right nodes
     public Student nextStudentEasy(Student student) {
         StudentNode<Student> currentNode = getNodePreRecursive(student);
-        boolean right = true;
 
         // Assuming that given student node always have two not-null child node
         StudentNode<Student> secondLowestStudent = currentNode.rightNode;
@@ -98,8 +95,6 @@ public class StudentBST {
             return null; // Root node has no parent
         }
 
-        boolean right = true;
-
         if ((root.hasNext(!right) && root.leftNode == node)
                 || (root.hasNext(right) && root.rightNode == node)) {
             return root;
@@ -111,14 +106,13 @@ public class StudentBST {
 
         return findParent(root.rightNode, node);
     }
-    
+
     private StudentNode<Student> findParent(StudentNode<Student> node) {
         return findParent(studentRoot, node);
     }
 
     public Student nextStudentGeneral(Student student) {
         StudentNode<Student> currentNode = getNodePreRecursive(student);
-        boolean right = true;
 
         if(currentNode.hasNext(right)) {
             return nextStudentEasy(student);
@@ -154,38 +148,87 @@ public class StudentBST {
     Say you want to remove 9, update its child node reference to its parent node
 
     - Case 3: 2 children
-
         11
        /  \
       9    13
      / \
     8   10
+
+    find the largest node in the left subtree = 10
+    find the smallest node in the right subtree = 13
      */
     public void removeStudent(Student student) {
         StudentNode<Student> studentNode = getNodePreRecursive(student);
         StudentNode<Student> parentNode = findParent(studentNode);
-        boolean right = true;
 
         StudentNode<Student> nodeToSet = studentNode.hasNext(right) ? studentNode.rightNode :
                 studentNode.hasNext(!right) ? studentNode.leftNode : null;
         // Case 3
-        if(studentNode.hasNext(right) && studentNode.hasNext(!right)) {
-            
+        if (studentNode.hasNext(right) && studentNode.hasNext(!right)) {
+            StudentNode<Student> leftMostSubRightTree = findLeftMostFrom(studentNode.rightNode);
+            StudentNode<Student> rightMostSubLeftTree = findRightMostFrom(studentNode.leftNode);
+
+            StudentNode<Student> nodeToSetCase1;
+            if (getHeight(leftMostSubRightTree) > getHeight(rightMostSubLeftTree)) {
+                nodeToSetCase1 = leftMostSubRightTree;
+            } else if (getHeight(rightMostSubLeftTree) > getHeight(leftMostSubRightTree)) {
+                nodeToSetCase1 = rightMostSubLeftTree;
+            } else {
+                nodeToSetCase1 = leftMostSubRightTree.hasNext(right) ? leftMostSubRightTree : rightMostSubLeftTree;
+            }
+
+            StudentNode<Student> parentNodeToSet = findParent(studentNode, nodeToSetCase1);
+            if (parentNodeToSet != null) {
+                if (nodeToSetCase1 == leftMostSubRightTree) {
+                    updateReference(parentNodeToSet, nodeToSetCase1, nodeToSetCase1.rightNode);
+                } else {
+                    updateReference(parentNodeToSet, nodeToSetCase1, nodeToSetCase1.leftNode);
+                }
+            }
+            studentNode = nodeToSetCase1;
         }
         // Case 2
         else if (nodeToSet != null) {
-            if (student.hasHigherGPA(parentNode.student)) {
-                parentNode.rightNode = nodeToSet;
-            } else {
-                parentNode.leftNode = nodeToSet;
-            }
+            updateReference(parentNode, studentNode, nodeToSet);
+        // Case 1
         } else {
-            if (student.hasHigherGPA(parentNode.student)) {
-                parentNode.rightNode = null;
-            } else {
-                parentNode.leftNode = null;
-            }
+            updateReference(parentNode, studentNode, null);
         }
+    }
+
+    private void updateReference(StudentNode<Student> parent, StudentNode<Student> child, StudentNode<Student> newChild) {
+        if(child.student.hasHigherGPA(parent.student)) {
+            parent.rightNode = newChild;
+        } else {
+            parent.leftNode = newChild;
+        }
+    }
+
+    public int getHeight(StudentNode<Student> root) {
+        if (root == null) {
+            return 0;
+        } else {
+            int leftHeight = getHeight(root.leftNode);
+            int rightHeight = getHeight(root.rightNode);
+
+            return Math.max(leftHeight, rightHeight) + 1;
+        }
+    }
+
+    private StudentNode<Student> findLeftMostFrom(StudentNode<Student> root) {
+        if(!root.hasNext(!right)) {
+            return root;
+        }
+
+        return findLeftMostFrom(root.leftNode);
+    }
+
+    private StudentNode<Student> findRightMostFrom(StudentNode<Student> root) {
+        if(!root.hasNext(right)) {
+            return root;
+        }
+
+        return findRightMostFrom(root.rightNode);
     }
 
     public static void main(String[] args) {
