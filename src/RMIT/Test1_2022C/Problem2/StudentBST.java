@@ -24,36 +24,37 @@ public class StudentBST {
         System.out.println("Tree size: "+N);
     }
 
-    public void addStudent(Student student) {
-        if(studentRoot == null) {
-            studentRoot = new StudentNode<>(student);
-            N++;
-        } else {
-            int index = 0;
-            StudentNode<Student> currentStudentNode = studentRoot;
-            StudentNode<Student> newStudentNode = new StudentNode<>(student);
-            boolean right = true;
+    private void insert(StudentNode<Student> studentNode, StudentNode<Student> root) {
+        boolean right = true;
 
-            while(index < N && currentStudentNode.student != student) {
-                if(student.hasHigherGPA(currentStudentNode.student)) { // right side
-                    currentStudentNode = setNext(currentStudentNode, newStudentNode, right);
-                } else { // left side
-                    currentStudentNode = setNext(currentStudentNode, newStudentNode, !right);
-                }
-                index++;
+        if(studentNode.student.hasHigherGPA(root.student)) { // right side of the tree
+            if(root.hasNext(right)) {
+                insert(studentNode, root.rightNode);
+            } else {
+                root.rightNode = studentNode;
+            }
+        } else {  // left side of the tree
+            if(root.hasNext(!right)) {
+                insert(studentNode, root.leftNode);
+            } else {
+                root.leftNode = studentNode;
             }
         }
     }
 
-    private StudentNode<Student> setNext(StudentNode<Student> currentNode , StudentNode<Student> newNode , boolean right) {
-        if(currentNode.hasNext(right)) {
-            if(right) {
-                return currentNode.goToNext(currentNode.rightNode, true);
-            }
-            return currentNode.goToNext(currentNode.leftNode, false);
-        } else {
+    private void insert(StudentNode<Student> studentNode) {
+        insert(studentNode, studentRoot);
+    }
+
+    public void addStudent(Student student) {
+        StudentNode<Student> newStudentNode = new StudentNode<>(student);
+
+        if(studentRoot == null) {
+            studentRoot = newStudentNode;
             N++;
-            return currentNode.goToNext(newNode, right);
+
+        } else {
+            insert(newStudentNode);
         }
     }
 
@@ -126,6 +127,11 @@ public class StudentBST {
         }
 
         return parentNode.student;
+    }
+
+    // Remove a student node from the tree collection
+    public void removeStudent(Student student) {
+
     }
 
     public static void main(String[] args) {

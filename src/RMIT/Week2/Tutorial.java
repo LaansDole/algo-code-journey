@@ -44,7 +44,7 @@ public class Tutorial {
             }
         }
     }
-    /*
+
     public static int Problem3(int N) {
 
         class Plane {
@@ -107,7 +107,6 @@ public class Tutorial {
         return maxGates;
     }
 
-     */
     public static void mergeSort(int[] arr, int arrayLength) {
         if (arrayLength >= 2) {
             int mid = arrayLength / 2;
