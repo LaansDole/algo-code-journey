@@ -87,7 +87,7 @@ public class StudentBST {
         return secondLowestStudent.student;
     }
 
-    public StudentNode<Student> findParent(StudentNode<Student> root, StudentNode<Student> node) {
+    private StudentNode<Student> findParent(StudentNode<Student> root, StudentNode<Student> node) {
         if (root == null || root == node) {
             return null; // Root node has no parent
         }
