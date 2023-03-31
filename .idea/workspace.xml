@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add nextStudentEasy() method">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add nextStudentGeneral() method, complete the sample test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -398,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680151114088</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add nextStudentGeneral() method, complete the sample test">
+      <created>1680234835029</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1680234835029</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,7 +439,8 @@
     <MESSAGE value="Polish EscapeRoom.java solution from the Test Sample" />
     <MESSAGE value="Implement addStudent methods for Question 2 StudentBST" />
     <MESSAGE value="Add nextStudentEasy() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add nextStudentEasy() method" />
+    <MESSAGE value="Add nextStudentGeneral() method, complete the sample test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add nextStudentGeneral() method, complete the sample test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
