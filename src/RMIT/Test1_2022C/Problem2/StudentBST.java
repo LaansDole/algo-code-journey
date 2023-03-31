@@ -27,13 +27,13 @@ public class StudentBST {
     private void insert(StudentNode<Student> studentNode, StudentNode<Student> root) {
         boolean right = true;
 
-        if(studentNode.student.hasHigherGPA(root.student)) { // right side of the tree
+        if(studentNode.student.hasHigherGPA(root.student)) { // right subtree
             if(root.hasNext(right)) {
                 insert(studentNode, root.rightNode);
             } else {
                 root.rightNode = studentNode;
             }
-        } else {  // left side of the tree
+        } else {  // left subtree
             if(root.hasNext(!right)) {
                 insert(studentNode, root.leftNode);
             } else {
@@ -51,32 +51,37 @@ public class StudentBST {
 
         if(studentRoot == null) {
             studentRoot = newStudentNode;
-            N++;
 
         } else {
             insert(newStudentNode);
         }
+        N++;
     }
 
-    public StudentNode<Student> searchNodePreRecursive(StudentNode<Student> node, Student student) {
-        if(node.student.GPA == student.GPA) {
-            return node;
+    public StudentNode<Student> getNodePreRecursive(Student student, StudentNode<Student> root) {
+        if(root.student.GPA == student.GPA) {
+            return root;
         }
 
-        if(node.student.hasHigherGPA(student)) {
-            node = node.leftNode;
-            return searchNodePreRecursive(node, student);
+        if(root.student.hasHigherGPA(student)) {
+            root = root.leftNode;
+            return getNodePreRecursive(student, root);
         }
 
-        node = node.rightNode;
-        return searchNodePreRecursive(node, student);
+        root = root.rightNode;
+        return getNodePreRecursive(student, root);
+    }
+    
+    private StudentNode<Student> getNodePreRecursive(Student student) {
+        return getNodePreRecursive(student, studentRoot);
     }
 
     // Assume the given student node has not-null left and right nodes
     public Student nextStudentEasy(Student student) {
-        StudentNode<Student> currentNode = searchNodePreRecursive(studentRoot, student);
+        StudentNode<Student> currentNode = getNodePreRecursive(student);
         boolean right = true;
 
+        // Assuming that given student node always have two not-null child node
         StudentNode<Student> secondLowestStudent = currentNode.rightNode;
 
         while(secondLowestStudent != null
@@ -106,16 +111,20 @@ public class StudentBST {
 
         return findParent(root.rightNode, node);
     }
+    
+    private StudentNode<Student> findParent(StudentNode<Student> node) {
+        return findParent(studentRoot, node);
+    }
 
     public Student nextStudentGeneral(Student student) {
-        StudentNode<Student> currentNode = searchNodePreRecursive(studentRoot, student);
+        StudentNode<Student> currentNode = getNodePreRecursive(student);
         boolean right = true;
 
         if(currentNode.hasNext(right)) {
             return nextStudentEasy(student);
         }
 
-        StudentNode<Student> parentNode = findParent(studentRoot, currentNode);
+        StudentNode<Student> parentNode = findParent(currentNode);
 
         if(student.hasHigherGPA(parentNode.student) &&
                 student.hasHigherGPA(studentRoot.student)) {
@@ -129,9 +138,49 @@ public class StudentBST {
         return parentNode.student;
     }
 
-    // Remove a student node from the tree collection
-    public void removeStudent(Student student) {
+    /*
+    Remove a student node from the tree collection
+    There are 3 cases:
 
+    - Case 1: No child - detach that leaf from its parent
+
+    - Case 2: 1 child
+        10
+       /  \
+      9    11
+     /
+    8
+
+    Say you want to remove 9, update its child node reference to its parent node
+
+    - Case 3: 2 children
+
+        11
+       /  \
+      9    13
+     / \
+    8   10
+     */
+    public void removeStudent(Student student) {
+        StudentNode<Student> studentNode = getNodePreRecursive(student);
+        boolean right = true; 
+        // Case 3
+        if(studentNode.hasNext(right) && studentNode.hasNext(!right)) {
+            
+        } 
+        // Case 2
+        else if(studentNode.hasNext(right) || studentNode.hasNext(!right)) {
+            
+        } 
+        // Case 1
+        else {
+            StudentNode<Student> parentNode = findParent(studentNode);
+            if(student.hasHigherGPA(parentNode.student)) { // right subtree
+                parentNode.rightNode = null;
+            } else {
+                parentNode.leftNode = null;
+            }
+        }
     }
 
     public static void main(String[] args) {

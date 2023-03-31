@@ -1,5 +1,6 @@
 package RMIT.Test1_2022C.Problem2;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,8 +18,8 @@ class StudentBSTTest {
     Student s9 = new Student(9, "I", 71.0);
     Student s10 = new Student(10, "J", 69.0);
 
-    @Test
-    void main() {
+    @BeforeEach
+    void initializeTree() {
         studentBST.addStudent(s1);
         studentBST.addStudent(s2);
         studentBST.addStudent(s3);
@@ -32,10 +33,16 @@ class StudentBSTTest {
 
         studentBST.getTreeSize();
         studentBST.printTree(studentBST.studentRoot, "", true);
+    }
 
-        assertEquals(78, studentBST.searchNodePreRecursive(studentBST.studentRoot, s4).student.GPA);
-        assertEquals(66, studentBST.searchNodePreRecursive(studentBST.studentRoot, s6).student.GPA);
+    @Test
+    void searchTest() {
+        assertEquals(78 , studentBST.getNodePreRecursive(s4, studentBST.studentRoot).student.GPA);
+        assertEquals(66 , studentBST.getNodePreRecursive(s6, studentBST.studentRoot).student.GPA);
+    }
 
+    @Test
+    void searchNextStudentTest() {
         assertEquals(71, studentBST.nextStudentEasy(s1).GPA);
         assertEquals(69, studentBST.nextStudentEasy(s5).GPA);
 

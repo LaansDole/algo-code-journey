@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add Graph class">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week4/Graph/GraphSolution.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Refactor code, clean up addStudent() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week2/Tutorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Week4/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week4/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <recent name="RMIT.Week3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentBSTTest.main">
+  <component name="RunManager" selected="JUnit.StudentBSTTest.searchTest">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -123,22 +122,6 @@
       <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
       <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentBSTTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
-      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
-      <option name="METHOD_NAME" value="addStudent" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -175,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentBSTTest.nextStudentEasy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentBSTTest.searchNextStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
@@ -185,7 +168,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
       <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
-      <option name="METHOD_NAME" value="nextStudentEasy" />
+      <option name="METHOD_NAME" value="searchNextStudentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentBSTTest.searchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
+      <option name="METHOD_NAME" value="searchTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentBSTTest.searchTest" />
+        <item itemvalue="JUnit.StudentBSTTest.searchNextStudentTest" />
         <item itemvalue="JUnit.StudentBSTTest.main" />
         <item itemvalue="JUnit.StudentBSTTest" />
         <item itemvalue="JUnit.StudentBSTTest.mainTest" />
-        <item itemvalue="JUnit.StudentBSTTest.addStudent" />
-        <item itemvalue="JUnit.StudentBSTTest.nextStudentEasy" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680247155137</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Refactor code, clean up addStudent() method">
+      <created>1680254553174</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680254553174</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +442,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="FruitBasket (Medium) Solution" />
     <MESSAGE value="LandDistance (Medium) using Queue FIFO algo" />
     <MESSAGE value="LandDistance (Medium) using Queue FIFO algo (DONE)" />
     <MESSAGE value="Sum of range queries solution" />
@@ -461,7 +466,8 @@
     <MESSAGE value="Add nextStudentEasy() method" />
     <MESSAGE value="Add nextStudentGeneral() method, complete the sample test" />
     <MESSAGE value="Add Graph class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Graph class" />
+    <MESSAGE value="Refactor code, clean up addStudent() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code, clean up addStudent() method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -470,11 +476,6 @@
           <url>file://$PROJECT_DIR$/test/java/main/FirstMissingPositiveTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/java/RMIT/Test1_2022C/Problem2/StudentBSTTest.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

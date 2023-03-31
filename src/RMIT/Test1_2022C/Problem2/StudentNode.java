@@ -17,14 +17,4 @@ public class StudentNode<Student> {
             return leftNode!=null;
         }
     }
-
-    public StudentNode<Student> goToNext(StudentNode<Student> node, boolean right) {
-        if(right) {
-            this.rightNode = node;
-            return rightNode;
-        } else {
-            this.leftNode = node;
-            return leftNode;
-        }
-    }
 }
