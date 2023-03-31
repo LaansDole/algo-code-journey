@@ -16,10 +16,9 @@ class StudentBSTTest {
     Student s8 = new Student(8, "H", 90.0);
     Student s9 = new Student(9, "I", 71.0);
     Student s10 = new Student(10, "J", 69.0);
-    Student s11 = new Student(11, "K", 70.0);
 
     @Test
-    void addStudent() {
+    void main() {
         studentBST.addStudent(s1);
         studentBST.addStudent(s2);
         studentBST.addStudent(s3);
@@ -30,11 +29,18 @@ class StudentBSTTest {
         studentBST.addStudent(s8);
         studentBST.addStudent(s9);
         studentBST.addStudent(s10);
-        studentBST.addStudent(s11);
 
         studentBST.getTreeSize();
         studentBST.printTree(studentBST.studentRoot, "", true);
 
+        assertEquals(78, studentBST.searchNodePreRecursive(studentBST.studentRoot, s4).student.GPA);
+        assertEquals(66, studentBST.searchNodePreRecursive(studentBST.studentRoot, s6).student.GPA);
+
         assertEquals(71, studentBST.nextStudentEasy(s1).GPA);
+        assertEquals(69, studentBST.nextStudentEasy(s5).GPA);
+
+        assertEquals(90, studentBST.nextStudentGeneral(s8).GPA);
+        assertEquals(70, studentBST.nextStudentGeneral(s10).GPA);
+        assertEquals(65, studentBST.nextStudentGeneral(s7).GPA);
     }
 }

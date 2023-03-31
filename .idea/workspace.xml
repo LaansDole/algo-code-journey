@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Implement addStudent methods for Question 2 StudentBST">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add nextStudentEasy() method">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,20 +94,7 @@
       <recent name="RMIT.Week3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentBSTTest.addStudent">
-    <configuration name="StudentBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBST" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StudentBSTTest">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -118,22 +106,6 @@
       <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
       <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
       <option name="METHOD_NAME" value="minOperations" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EscapeRoomTest.minOperationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Test1_2022C.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C" />
-      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.EscapeRoomTest" />
-      <option name="METHOD_NAME" value="minOperationsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,6 +142,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentBSTTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentBSTTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
+      <option name="METHOD_NAME" value="mainTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentBSTTest.nextStudentEasy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -188,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentBSTTest" />
+        <item itemvalue="JUnit.StudentBSTTest.main" />
+        <item itemvalue="JUnit.StudentBSTTest.mainTest" />
         <item itemvalue="JUnit.StudentBSTTest.addStudent" />
         <item itemvalue="JUnit.StudentBSTTest.nextStudentEasy" />
-        <item itemvalue="Application.StudentBST" />
-        <item itemvalue="JUnit.StudentBSTTest" />
-        <item itemvalue="JUnit.EscapeRoomTest.minOperationsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680080948061</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add nextStudentEasy() method">
+      <created>1680151114088</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680151114088</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,7 +437,8 @@
     <MESSAGE value="Update BinaryTree package and traversal methods" />
     <MESSAGE value="Polish EscapeRoom.java solution from the Test Sample" />
     <MESSAGE value="Implement addStudent methods for Question 2 StudentBST" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement addStudent methods for Question 2 StudentBST" />
+    <MESSAGE value="Add nextStudentEasy() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add nextStudentEasy() method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
