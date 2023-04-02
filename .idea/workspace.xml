@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="removeStudent() method">
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add removeStudent(), refactor and clean up code">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test1_2023A/Problem1/DiamondBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem2/StudentBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week4/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week4/Graph/GraphListRep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Week4/Graph/GraphSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Week4/Graph/GraphMatrixRep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +95,7 @@
       <recent name="RMIT.Week3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentBSTTest.searchTest">
+  <component name="RunManager">
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -438,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680272629936</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Add removeStudent(), refactor and clean up code">
+      <created>1680279963379</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1680279963379</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,7 +464,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Sum of range queries solution" />
     <MESSAGE value="RMIT 2022-SemC Test 1 Problem 1 Solution" />
     <MESSAGE value="rangeQuery update Math.ceil to Math.floor" />
     <MESSAGE value="RMIT Algo Tutorial 1" />
@@ -479,7 +488,8 @@
     <MESSAGE value="Refactor code, clean up addStudent() method" />
     <MESSAGE value="Refactor code, clean up" />
     <MESSAGE value="removeStudent() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="removeStudent() method" />
+    <MESSAGE value="Add removeStudent(), refactor and clean up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add removeStudent(), refactor and clean up code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -489,11 +499,22 @@
           <line>14</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="distance" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="boxMatrix[level][i]" language="JAVA" />
+        <watch expression="boxMatrix[level]" language="JAVA" />
+        <watch expression="level" language="JAVA" />
+        <watch expression="configuration.charAt(i)" language="JAVA" />
+        <watch expression="configuration" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

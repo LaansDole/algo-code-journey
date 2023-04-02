@@ -15,10 +15,10 @@ public class StudentBST {
             return;
         }
 
-        System.out.println(prefix + (right ? "├── " : "└── ") + node.student.GPA);
+        System.out.println(prefix + (right ? "|-- " : "'-- ") + node.student.GPA);
 
-        printTree(node.leftNode, prefix + (right ? "│   " : "    "), false);
-        printTree(node.rightNode, prefix + (right ? "│   " : "    "), true);
+        printTree(node.leftNode, prefix + (right ? "|   " : "    "), false);
+        printTree(node.rightNode, prefix + (right ? "|  " : "    "), true);
     }
 
     public void getTreeSize() {

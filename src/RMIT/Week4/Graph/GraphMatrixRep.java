@@ -3,7 +3,7 @@ package RMIT.Week4.Graph;
 import RMIT.Week3.Queue.LinkedListQueue;
 import RMIT.Week3.Stack.LinkedListStack;
 
-public class GraphSolution {
+public class GraphMatrixRep {
     int[][] matrix;
 
     // this array presents the labels of the vertices/nodes
@@ -15,7 +15,7 @@ public class GraphSolution {
     boolean found;
 
     // create a graph with the number of nodes/vertices
-    public GraphSolution(int nodes) {
+    public GraphMatrixRep(int nodes) {
         size = nodes;
         matrix = new int[size][size];
         // no connection/edge initial
