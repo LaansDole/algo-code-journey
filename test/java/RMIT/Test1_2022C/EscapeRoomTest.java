@@ -1,5 +1,6 @@
 package RMIT.Test1_2022C;
 
+import RMIT.Test1_2022C.Problem1.EscapeRoom;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

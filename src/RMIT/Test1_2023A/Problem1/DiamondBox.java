@@ -71,27 +71,6 @@ public class DiamondBox {
         return isDiamondInBox() && isBalanced() && haveOutermostBox();
     }
 
-    private char[][] getBoxesMatrix() { // get a matrix of boxes based on different level
-        int level = -1;
-        char[][] boxMatrix = new char[deepestLevel()+1][configuration.length()+1];
-        for (int i = 0; i < configuration.length(); i++) {
-            char c = configuration.charAt(i);
-
-            if(c == ']' && i != configuration.length()-1) {
-                boxMatrix[level][i] = c;
-                level--;
-                continue;
-            }
-
-            if(c == '[') {
-                level++;
-            }
-
-            boxMatrix[level][i] = c;
-        }
-        return boxMatrix;
-    }
-
     // Time complexity: O(N) if the diamond box is valid
     public int deepestLevel() {
         if(!isValid()) {
@@ -113,11 +92,32 @@ public class DiamondBox {
                 continue;
             }
 
-            // if c is not [, reset level to 1
+            // if c is not [, decrease the level
             maxLevel = Math.max(maxLevel,level);
-            level = 1;
+            level--;
         }
         return maxLevel;
+    }
+
+    private char[][] getBoxesMatrix() { // get a matrix of boxes based on different level
+        int level = -1;
+        char[][] boxMatrix = new char[deepestLevel()+1][configuration.length()+1];
+        for (int i = 0; i < configuration.length(); i++) {
+            char c = configuration.charAt(i);
+
+            if(c == ']' && i != configuration.length()-1) {
+                boxMatrix[level][i] = c;
+                level--;
+                continue;
+            }
+
+            if(c == '[') {
+                level++;
+            }
+
+            boxMatrix[level][i] = c;
+        }
+        return boxMatrix;
     }
 
     // Assumed that the configuration is correct, Time complexity: O(N^2)
@@ -154,7 +154,6 @@ public class DiamondBox {
         return maxDiamond;
     }
 
-
     public static void main(String[] args) {
         DiamondBox diamondBox1 = new DiamondBox("[**[**]*]");
         System.out.println("Box1 is valid: "+diamondBox1.isValid());
@@ -174,6 +173,13 @@ public class DiamondBox {
         System.out.println("Box3 is valid: "+diamondBox3.isValid());
         System.out.println("Box3 deepest level: "+diamondBox3.deepestLevel());
         System.out.println("Max diamonds in a box3: "+diamondBox3.maxDiamonds());
+
+        System.out.println('\n');
+
+        DiamondBox diamondBox4 = new DiamondBox("[[[][[]]]]");
+        System.out.println("Box4 is valid: "+diamondBox4.isValid());
+        System.out.println("Box3 deepest level: "+diamondBox4.deepestLevel());
+        System.out.println("Max diamonds in a box4: "+diamondBox4.maxDiamonds());
     }
 }
 

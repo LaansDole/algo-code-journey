@@ -1,4 +1,4 @@
-package RMIT.Test1_2022C;
+package RMIT.Test1_2022C.Problem1;
 
 import RMIT.Week3.Stack.LinkedListStack;
 import RMIT.Week3.Node;
