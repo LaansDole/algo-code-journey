@@ -44,7 +44,7 @@ public class DiamondBox {
                 && configuration.charAt(configuration.length()-1) != '*');
     }
 
-    private boolean haveOutermostBox() {
+    private boolean hasOutermostBox() {
         int level = -1;
 
         for(int i = 0; i < configuration.length(); i++) {
@@ -68,7 +68,7 @@ public class DiamondBox {
 
     // Time complexity: Linear O(N) with the N elements in the stack
     public boolean isValid() {
-        return isDiamondInBox() && isBalanced() && haveOutermostBox();
+        return isDiamondInBox() && isBalanced() && hasOutermostBox();
     }
 
     // Time complexity: O(N) if the diamond box is valid

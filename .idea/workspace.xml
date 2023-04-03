@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Add Solution to Problem 1 Test 1, add Graph from Week 4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2022C/EscapeRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2022C/Problem1/EscapeRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RMIT/Test1_2023A/Problem1/DiamondBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test1_2023A/Problem1/DiamondBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RMIT/Test1_2022C/EscapeRoomTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Debug the deepestLevel() method from Problem 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -454,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680430047750</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Debug the deepestLevel() method from Problem 1">
+      <created>1680535388152</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1680535388152</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -470,7 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rangeQuery update Math.ceil to Math.floor" />
     <MESSAGE value="RMIT Algo Tutorial 1" />
     <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
     <MESSAGE value="BinarySearch solution" />
@@ -495,7 +496,8 @@
     <MESSAGE value="removeStudent() method" />
     <MESSAGE value="Add removeStudent(), refactor and clean up code" />
     <MESSAGE value="Add Solution to Problem 1 Test 1, add Graph from Week 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Solution to Problem 1 Test 1, add Graph from Week 4" />
+    <MESSAGE value="Debug the deepestLevel() method from Problem 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug the deepestLevel() method from Problem 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,11 +506,6 @@
           <url>file://$PROJECT_DIR$/test/java/main/FirstMissingPositiveTest.java</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/RMIT/Test1_2023A/Problem1/DiamondBox.java</url>
-          <line>181</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
@@ -526,6 +523,8 @@
         <watch expression="level" language="JAVA" />
         <watch expression="configuration.charAt(i)" language="JAVA" />
         <watch expression="configuration" language="JAVA" />
+        <watch expression="level" language="JAVA" />
+        <watch expression="maxLevel" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
