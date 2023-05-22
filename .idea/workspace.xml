@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Debug the deepestLevel() method from Problem 1" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Code refactor">
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Project/SecretKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Project/SecretKeyGuesser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/SecretSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/MillionRandomArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/RMITStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/RMITStudentCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -456,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680535388152</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Code refactor">
+      <created>1680535569758</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1680535569758</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,7 +488,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="RMIT Algo Tutorial 1" />
     <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
     <MESSAGE value="BinarySearch solution" />
     <MESSAGE value="Cleanup All Tests into Assertions object" />
@@ -497,7 +512,8 @@
     <MESSAGE value="Add removeStudent(), refactor and clean up code" />
     <MESSAGE value="Add Solution to Problem 1 Test 1, add Graph from Week 4" />
     <MESSAGE value="Debug the deepestLevel() method from Problem 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug the deepestLevel() method from Problem 1" />
+    <MESSAGE value="Code refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
