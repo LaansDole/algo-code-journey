@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Code refactor">
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Project/SecretKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Project/SecretKeyGuesser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/SecretSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/MillionRandomArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/RMITStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RMIT/Week5/Tutorial/RMITStudentCollection.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Exam Revision">
+      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Test2_2023A/DoraCakeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -91,14 +86,30 @@
       <recent name="main.Main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="RMIT.Test2_2023A" />
       <recent name="RMIT.Test1_2022C.Problem2" />
       <recent name="RMIT.Test1_2022C" />
       <recent name="RMIT.Week4.BinaryTree" />
       <recent name="main" />
-      <recent name="RMIT.Week3" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="DoraCakeTest.doubleMergeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RMIT.Test2_2023A.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RMIT.Test2_2023A" />
+      <option name="MAIN_CLASS_NAME" value="RMIT.Test2_2023A.DoraCakeTest" />
+      <option name="METHOD_NAME" value="doubleMergeSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EscapeRoomTest.minOperations" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -146,22 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentBSTTest.mainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RMIT.Test1_2022C.Problem2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RMIT.Test1_2022C.Problem2" />
-      <option name="MAIN_CLASS_NAME" value="RMIT.Test1_2022C.Problem2.StudentBSTTest" />
-      <option name="METHOD_NAME" value="mainTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentBSTTest.searchNextStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <extension name="coverage">
@@ -196,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DoraCakeTest.doubleMergeSort" />
         <item itemvalue="JUnit.StudentBSTTest.searchTest" />
         <item itemvalue="JUnit.StudentBSTTest.searchNextStudentTest" />
         <item itemvalue="JUnit.StudentBSTTest.main" />
         <item itemvalue="JUnit.StudentBSTTest" />
-        <item itemvalue="JUnit.StudentBSTTest.mainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680535569758</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Exam Revision">
+      <created>1684777213288</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1684777213288</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="RMIT Algo Tutorial 1 Solution to all questions" />
     <MESSAGE value="BinarySearch solution" />
     <MESSAGE value="Cleanup All Tests into Assertions object" />
     <MESSAGE value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
@@ -513,7 +514,8 @@
     <MESSAGE value="Add Solution to Problem 1 Test 1, add Graph from Week 4" />
     <MESSAGE value="Debug the deepestLevel() method from Problem 1" />
     <MESSAGE value="Code refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactor" />
+    <MESSAGE value="Exam Revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam Revision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
