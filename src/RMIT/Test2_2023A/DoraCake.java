@@ -8,6 +8,8 @@ public class DoraCake {
         DoraCake cake = new DoraCake((new Topic[]{topic1 , topic2 , topic3}) , 10);
         System.out.println(cake.unlimitedCake());
         System.out.println(cake.weightByNumber(2));
+        System.out.println(cake.largestWeight());
+
 
     }
     public static class Topic {
@@ -97,4 +99,47 @@ public class DoraCake {
         return largestW;
     }
 
+    public double largestWeight() {
+        boolean[] selected = new boolean[topics.length];
+        double[] surfaces = new double[topics.length];
+        for (int i = 0; i < topics.length; i++) {
+            surfaces[i] = topics[i].S;
+        }
+        double[] weights = new double[topics.length];
+        for (int i = 0; i < topics.length; i++) {
+            weights[i] = topics[i].Weight;
+        }
+
+        for (int i = 0; i < topics.length; i++) {
+            selected[i] = false;
+        }
+
+        SubSetGenerator.selected = selected;
+        double w = SubSetGenerator.subset(A, weights, surfaces, topics.length);
+
+        return w;
+    }
+
+    class SubSetGenerator {
+        static boolean[] selected;
+        static double subset(double A, double[] w, double[] s, int index) {
+            if (A == 0 || index == 0) {
+                return 0;
+            }
+
+            if (s[index - 1] > A) {
+                return subset(A, w, s, index - 1);
+            }
+
+            double case1 = w[index - 1] + subset(A - s[index - 1], w, s, index - 1);
+            double case2 = subset(A, w, s, index - 1);
+
+            if (case1 > case2) {
+                selected[index - 1] = true;
+                return case1;
+            } else {
+                return case2;
+            }
+        }
+    }
 }

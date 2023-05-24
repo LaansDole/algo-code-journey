@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Exam Revision">
-      <change afterPath="$PROJECT_DIR$/test/java/RMIT/Test2_2023A/DoraCakeTest.java" afterDir="false" />
+    <list default="true" id="22bba0ca-688d-459f-8ca7-56c16fd4d7e5" name="Changes" comment="Exam Revision Q2">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java" afterDir="false" />
     </list>
@@ -474,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684777213288</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Exam Revision Q2">
+      <created>1684845313160</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1684845313161</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="BinarySearch solution" />
     <MESSAGE value="Cleanup All Tests into Assertions object" />
     <MESSAGE value="Implementing the Solutions from Week 2 Tutorial, except Problem 3, implementing MergeSort Algo with O(N*logN)" />
     <MESSAGE value="Implementing Singly Linked List practice from the lecture" />
@@ -515,7 +521,8 @@
     <MESSAGE value="Debug the deepestLevel() method from Problem 1" />
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Exam Revision" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam Revision" />
+    <MESSAGE value="Exam Revision Q2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam Revision Q2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -529,20 +536,20 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="4" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/RMIT/Test2_2023A/DoraCake.java</url>
+          <line>124</line>
+          <properties class="RMIT.Test2_2023A.DoraCake.SubSetGenerator" method="subset">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="distance" />
-      </configuration>
-      <configuration name="Application">
-        <watch expression="boxMatrix[level][i]" language="JAVA" />
-        <watch expression="boxMatrix[level]" language="JAVA" />
-        <watch expression="level" language="JAVA" />
-        <watch expression="configuration.charAt(i)" language="JAVA" />
-        <watch expression="configuration" language="JAVA" />
-        <watch expression="level" language="JAVA" />
-        <watch expression="maxLevel" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
