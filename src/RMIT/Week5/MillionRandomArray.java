@@ -1,4 +1,4 @@
-package RMIT.Week5.Tutorial;
+package RMIT.Week5;
 
 import java.util.Random;
 public class MillionRandomArray {

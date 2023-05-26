@@ -1,0 +1,9 @@
+Complexity is
+while (exp(start, N) < D) // O(N)
+
+for i = 0 to (power - 1) // O(N)
+
+=> O(N*N)
+
+We can use a Binary Search to return the complexity of O(logN)
+
